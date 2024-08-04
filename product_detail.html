@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Hemanut</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="vendor/jquery-1.11.1.min.js"></script>
+	<script src="vendor/bootstrap.min.js"></script>
+	<script src="vendor/owl.carousel.min.js"></script>
+	<script src="vendor/bootstrap-rating.min.js"></script>
+	<script src="vendor/jquery.fancybox.min.js"></script>
+	<script src="js/jquery.lazy.min.js"></script>
+	<script src="js/index.js"></script>
+	<link href="vendor/bootstrap.min.css" rel="stylesheet">
+	<link href="vendor/owl.carousel.min.css" rel="stylesheet">
+	<link href="vendor/bootstrap-rating.css" rel="stylesheet">
+	<link href="vendor/jquery.fancybox.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/product_detail.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/all.css">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container ">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 top">
+						<div class="navbar_left">
+							<a class="" href="">
+								<img src="images/pageone_1.svg" alt="img" title="img"
+									class="img-responsive logo_desk img">
+							</a>
+						</div>
+						<div class="navbar_right">
+							<div class="d-desktop">
+								<form action="" class="form_search" method="get">
+									<input class="form-control input_search" type="text" placeholder="Tìm kiếm sản phẩm"
+										name="" required>
+									<button type="submit"><img src="images/pageone_2.svg" alt="img"
+											title="img"></button>
+								</form>
+
+								<div>
+									<a href="javascript:void(0);" data-toggle="modal" data-target="#accountModal">
+										<img src="images/pageone_3.svg" alt="img" title="img" class="img">
+										<p>Tài khoản</p>
+									</a>
+
+								</div>
+								<div>
+									<a href="#" class="cart">
+										<img src="images/pageone_4.svg" alt="cart" title="cart" class="img">
+										<div class="num">2</div>
+										<p>Giỏ hàng</p>
+									</a>
+								</div>
+							</div>
+							<div class="d-mobile">
+								<a href="javascript:void(0);" onclick="open_menu('navbar-ex1-collapse')">
+									<img src="images/pageone_33.svg" alt="img" title="img">
+								</a>
+							</div>
+
+						</div>
+						<div class="popup_cart" style="display: none;">
+							<div class="bl_1">
+								<p class="t_0"><b>Giỏ hàng</b> <span>(02)</span></p>
+							</div>
+							<div class="bl_1">
+								<div class="item">
+									<a href="#">
+										<img src="images/pageone_6.jpg" alt="img" title="img" class="img_1">
+									</a>
+									<div class="d_1">
+										<a href="#">
+											<p class="t_1">Matrix Repair Pro + Exosome Serum - Chống lão hóa, xóa...</p>
+										</a>
+										<p class="t_2">1 x <span>525.000đ</span></p>
+									</div>
+									<a href="javascript:void(0)" class="del_cart">
+										<img src="images/pageone_43.svg" alt="img" title="img">
+									</a>
+								</div>
+								<div class="item">
+									<a href="#">
+										<img src="images/pageone_6.jpg" alt="img" title="img" class="img_1">
+									</a>
+									<div class="d_1">
+										<a href="#">
+											<p class="t_1">Matrix Repair Pro + Exosome Serum - Chống lão hóa, xóa...</p>
+										</a>
+										<p class="t_2">1 x <span>525.000đ</span></p>
+									</div>
+									<a href="javascript:void(0)" class="del_cart">
+										<img src="images/pageone_43.svg" alt="img" title="img">
+									</a>
+								</div>
+
+							</div>
+							<div class="bl_1">
+								<div class="bl_2 d-flex">
+									<p class="t_1">Tổng cộng:</p>
+									<p><b>1.575.000đ</b></p>
+								</div>
+								<a href="javascript:void(0)">
+									<div class="btn_1">
+										<p>Xem Giỏ Hàng</p>
+										<img src="images/pageone_41.svg" alt="img" title="img">
+									</div>
+								</a>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bottom">
+						<div class="collapse navbar-collapse navbar-ex1-collapse menu">
+							<form action="" class="form_search d-mobile" method="get">
+								<input class="form-control input_search" type="text" placeholder="Tìm kiếm sản phẩm"
+									name="" required>
+								<button type="submit"><img src="images/pageone_2.svg" alt="img" title="img"></button>
+							</form>
+							<ul class="nav navbar-nav">
+								<li><a href="">Về PageOne</a></li>
+								<li><a href="">Sản phẩm</a></li>
+								<li class="dropdown">
+									<a href="javascript:void(0);" onclick="openGiftModal()">Quà
+										tặng</a>
+									<p class="t_hot polygon">Hot</p>
+									<ul class="dropdown-menu special_menu">
+										<div class="bl_1">
+											<p class="t_0">Quà tặng dành cho bạn:</p>
+										</div>
+										<div class="bl_1 bl_gift d-flex">
+											<div class="bl_2 polygon d-flex">
+												<p class="t_1 polygon">20<sup>%</sup></p>
+												<div>
+													<p class="t_2">Giảm ngay <b>20%</b></p>
+													<p class="t_3">Cho đơn hàng đầu tiên từ 499K</p>
+													<div class="bl_3 d-flex">
+														<div>
+															<p class="t_4">Mã: <b>99998888</b></p>
+															<p class="t_4">HSD: 10.08.2024</p>
+														</div>
+														<a href="#">
+															<div class="btn_1">Chép mã</div>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="bl_2 polygon d-flex">
+												<p class="t_1 polygon">20<sup>%</sup></p>
+												<div>
+													<p class="t_2">Giảm ngay <b>20%</b></p>
+													<p class="t_3">Cho đơn hàng đầu tiên từ 499K</p>
+													<div class="bl_3 d-flex">
+														<div>
+															<p class="t_4">Mã: <b>99998888</b></p>
+															<p class="t_4">HSD: 10.08.2024</p>
+														</div>
+														<a href="#">
+															<div class="btn_1">Chép mã</div>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</ul>
+								</li>
+								<li><a href="">Thành phần</a></li>
+								<li><a href="">Công nghệ chăm da</a></li>
+								<li><a href="">Thông tin</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+	</header>
+
+	<div class="product_detail">
+		<div class="top_1">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div>
+							<ol class="breadcrumb d-desktop">
+								<li><a href="" class="t_1">Trang chủ</a></li>
+								<li><a href="" class="t_1">Sản phẩm</a></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top_2">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+						<div class="carousel_3">
+							<div class="owl-carousel owl-theme">
+								<div class="item">
+									<a href=""><img src="images/pageone_44.jpg" alt="img" title="img"
+											class="img-responsive"></a>
+								</div>
+								<div class="item">
+									<a href=""><img src="images/pageone_45.jpg" alt="img" title="img"
+											class="img-responsive"></a>
+								</div>
+								<div class="item">
+									<a href=""><img src="images/pageone_46.jpg" alt="img" title="img"
+											class="img-responsive"></a>
+								</div>
+								<div class="item">
+									<a href=""><img src="images/pageone_47.jpg" alt="img" title="img"
+											class="img-responsive"></a>
+								</div>
+							</div>
+
+						</div>
+						<div class="carousel_4">
+							<div class="owl-carousel owl-theme">
+								<div class="item">
+									<a href=""><img src="images/pageone_44.jpg" alt="img" title="img"
+											class="img-responsive"></a>
+								</div>
+								<div class="item">
+									<a href=""><img src="images/pageone_45.jpg" alt="img" title="img"
+											class="img-responsive"></a>
+								</div>
+								<div class="item">
+									<a href=""><img src="images/pageone_46.jpg" alt="img" title="img"
+											class="img-responsive"></a>
+								</div>
+								<div class="item">
+									<a href=""><img src="images/pageone_47.jpg" alt="img" title="img"
+											class="img-responsive"></a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+						<h1 class="t_0">PAGE ONE <b>TRANACIDE PRO + EXOSOME SERUM DƯỠNG SÁNG, MỜ THÂM NÁM, CHO MỌI LOẠI
+								DA</b></h1>
+						<img src="images/pageone_48.jpg" alt="img" title="img" class="img">
+						<div class="bl_1 advantage">
+							<p><b>Ưu điểm:</b></p>
+							<div class="d_1">
+								<div class="text">
+									<p>Một bước dưỡng trắng mờ nám <b> đa tác động</b></p>
+								</div>
+								<div class="text">
+									<p>Sử dụng được trên <b> tất cả các nền da</b>, bao gồm cả da nhạy cảm</p>
+								</div>
+							</div>
+						</div>
+						<div class="bl_2 d-flex-end">
+							<p class="t_1">750.000đ</p>
+							<p class="t_2">525.000đ</p>
+							<p class="t_3 polygon">30%</p>
+						</div>
+						<div class="bl_2 d-flex">
+							<input type="hidden" class="rating" value="4.5" disabled="disabled"
+								data-filled="fas fa-star" data-empty="far fa-star" />
+							<p class="t_4">| 750 ĐÃ BÁN</p>
+						</div>
+						<div class="bl_2 bl_3 d-flex">
+							<a href="#">
+								<div class="btn_1 d-flex">
+									<span>Thêm vào giỏ hàng</span>
+								</div>
+							</a>
+							<a href="#">
+								<div class="btn_1 btn_2 d-flex">
+									<span>Mua ngay</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<hr>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top_3">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<ul class="nav nav-pills">
+							<li class="active"><a data-toggle="pill" href="#infoProduct">Thông tin sản phẩm</a></li>
+							<li><a data-toggle="pill" href="#reviews">Đánh giá, nhận xét</a></li>
+						</ul>
+
+						<div class="tab-content">
+							<div id="infoProduct" class="tab-pane fade in active">
+								<iframe width="100%" height="535px"
+									src="https://www.youtube-nocookie.com/embed/tbYeDzKiYzI?si=wh2cbVuVlzEGvObG"
+									title="YouTube video player" frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									allowfullscreen></iframe>
+								<p class="t_1">Video giới thiệu sản phẩm <b>PAGE ONE TRANACIDE PRO + EXOSOME SERUM
+										DƯỠNG SÁNG, MỜ THÂM NÁM, CHO MỌI LOẠI DA</b></p>
+								<div class="d-flex">
+									<p><b>Mô tả sản phẩm:</b></p>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+										Ipsum has been the industry's standard
+										dummy text ever since the 1500s, when an unknown printer took a galley of type
+										and scrambled it to make a type specimen</p>
+								</div>
+								<div class="bl_1">
+									<p class="t_2">Bảng công thức thành phần</p>
+									<ul>
+										<li>Tranexamic 3%</li>
+										<li>Niacinamide 5%</li>
+										<li>Alpha Arbutin 1%</li>
+										<li>Liposome</li>
+										<li>B5</li>
+										<li>Allantoin</li>
+										<li>Cica Exosome Adenosine</li>
+									</ul>
+								</div>
+								<div class="d-flex">
+									<p><b>Công dụng:</b></p>
+									<img src="images/pageone_48.jpg" alt="img" title="img" class="img">
+								</div>
+								<div class="advantage">
+									<p><b>Ưu điểm:</b></p>
+									<div class="d_1">
+										<div class="text">
+											<p>Một bước dưỡng trắng mờ nám <b> đa tác động</b></p>
+										</div>
+										<div class="text">
+											<p>Sử dụng được trên <b> tất cả các nền da</b>, bao gồm cả da nhạy cảm</p>
+										</div>
+									</div>
+								</div>
+								<img src="images/pageone_50.jpg" alt="img" title="img" class="img-responsive img_1">
+								<div class="bl_2">
+									<div>
+										<div class="d-flex">
+											<p><b>Phản hồi từ khách hàng:</b></p>
+											<ul>
+												<li>95% khách hàng đồng ý da sáng màu
+													bớt sạm nám</li>
+												<li>95% khách hàng đồng ý da sáng màu
+													bớt sạm nám</li>
+												<li>95% khách hàng đồng ý da sáng màu
+													bớt sạm nám</li>
+											</ul>
+										</div>
+										<div class="d-flex">
+											<p><b>Kết cấu sản phẩm:</b></p>
+											<p>Dạng gel</p>
+										</div>
+									</div>
+									<img src="images/pageone_51.jpg" alt="img" title="img" class="img-responsive">
+								</div>
+								<p class="t_3">Hướng dẫn sử dụng</p>
+								<p class="text-center">Sử dụng sau bước rửa mặt, dùng 2 lần sáng và tối để đạt hiệu quả
+									tốt nhất</p>
+								<div class="bl_3 d-flex text-center">
+									<div class="d_1">
+										<img src="images/pageone_52.jpg" alt="img" title="img" class="img">
+										<p><b>Bước 1:</b></p>
+										<p>Làm sạch da với
+											sữa rửa mặt PageOne
+											Cream Cleanser</p>
+									</div>
+									<div class="d_1">
+										<img src="images/pageone_52.jpg" alt="img" title="img" class="img">
+										<p><b>Bước 2:</b></p>
+										<p>Làm sạch da với
+											sữa rửa mặt PageOne
+											Cream Cleanser</p>
+									</div>
+									<div class="d_1">
+										<img src="images/pageone_52.jpg" alt="img" title="img" class="img">
+										<p><b>Bước 3:</b></p>
+										<p>Làm sạch da với
+											sữa rửa mặt PageOne
+											Cream Cleanser</p>
+									</div>
+									<div class="d_1">
+										<img src="images/pageone_52.jpg" alt="img" title="img" class="img">
+										<p><b>Bước 4:</b></p>
+										<p>Làm sạch da với
+											sữa rửa mặt PageOne
+											Cream Cleanser</p>
+									</div>
+									<div class="d_1">
+										<img src="images/pageone_52.jpg" alt="img" title="img" class="img">
+										<p><b>Bước 5:</b></p>
+										<p>Làm sạch da với
+											sữa rửa mặt PageOne
+											Cream Cleanser</p>
+									</div>
+								</div>
+							</div>
+							<div id="reviews" class="tab-pane fade">
+								<h3>Menu 1</h3>
+								<p>Some content in menu 1.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="top_1">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+						<img src="images/pageone_1.svg" alt="img" title="img" class="img-responsive img_1">
+						<p class="t_2">Page One Việt Nam</p>
+						<p>Theo dõi qua:</p>
+						<div class="d-flex">
+							<a href=""><img src="images/pageone_17.svg" alt="img" title="img"
+									class="img-responsive"></a>
+							<a href=""><img src="images/pageone_18.svg" alt="img" title="img"
+									class="img-responsive"></a>
+							<a href=""><img src="images/pageone_19.svg" alt="img" title="img"
+									class="img-responsive"></a>
+							<a href=""><img src="images/pageone_20.svg" alt="img" title="img"
+									class="img-responsive"></a>
+							<a href=""><img src="images/pageone_21.svg" alt="img" title="img"
+									class="img-responsive"></a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+						<p class="t_1">Liên Hệ:</p>
+						<a href="tel:0906872948">
+							<button type="button" class="btn_1 btn d-flex">
+								<img src="images/pageone_23.svg" alt="img" title="img">
+								<div>Hotline: <b>090 687 29 48</b></div>
+							</button>
+						</a>
+						<div class="bl_1 d-flex">
+							<img src="images/pageone_24.svg" alt="img" title="img">
+							<p>Địa chỉ: 15 Đường 17, Phường Phước
+								Bình , Ho Chi Minh City, Vietnam</p>
+						</div>
+						<iframe class="lazy"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.105800058006!2d106.71802761000998!3d10.803208258655966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752908933ca403%3A0xe212ca64591c8b8d!2sRejuvaskin%20Vi%E1%BB%87t%20Nam!5e0!3m2!1svi!2sus!4v1699324445072!5m2!1svi!2sus"
+							width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+						<p class="t_1">Hỗ trợ:</p>
+						<p><b>Giờ làm việc:</b> 8:00 - 18:00</p>
+						<p>Thứ 2 - chủ nhật (trừ ngày lễ)</p>
+						<p><b>Tiếp điện thoại ngoài giờ:
+							</b> </p>
+						<p>đến 23:00 hàng ngày</p>
+						<p><b>Ý kiến - phản hồi chất lượng:
+							</b></p>
+						<p>Hotline: <a href="tel:0906872948">090 687 29 48</a></p>
+						<p>Email: <a href="mailto:contact@pageone.vn">Contact@pageone.vn</a></p>
+					</div>
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+						<p class="t_1">Chính sách:</p>
+						<a href="">
+							<p>Giới thiệu</p>
+						</a>
+						<a href="">
+							<p>Chính sách bảo mật</p>
+						</a>
+						<a href="">
+							<p>Hình thức thanh toán</p>
+						</a>
+						<a href="">
+							<p>Chính sách giao hàng</p>
+						</a>
+						<a href="">
+							<p>Chính sách đổi trả</p>
+						</a>
+						<a href="">
+							<p>Cam kết chất lượng dịch vụ</p>
+						</a>
+						<a href="">
+							<p>Câu hỏi thường gặp</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top_2">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="d-flex">
+							<img src="images/pageone_25.svg" alt="img" title="img" class="img-responsive">
+							<div>
+								<p>Bản quyền của PageOne Viet Nam - www.pageonevietnam.com</p>
+								<p>Giấy chứng nhận ĐKKD số 999999999 do Sở Kế hoạch và Đầu tư TPHCM cấp ngày</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mobi_btn d-mobile" id="phone_call_home">
+		<div class="bl_1">
+			<div class="tab">
+				<a href="" target="_blank">
+					<img src="images/pageone_34.svg" alt="img" title="img" class="img-responsive">
+				</a>
+			</div>
+			<div class="tab tab_left">
+				<a href="">
+					<img src="images/pageone_35.svg" alt="img" title="img" class="img-responsive">
+				</a>
+			</div>
+			<div class="tab tab_fab">
+				<div class="top">
+					<div class="fab">
+						<a href="">
+							<img src="images/pageone_36.svg" alt="img" title="img" class="img-responsive">
+							<div class="num">2</div>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="tab tab_right">
+				<a href="javascript:void(0);" target="_blank" data-toggle="modal" data-target="#accountModal"
+					onclick="close_menu()">
+					<img src="images/pageone_37.svg" alt="img" title="img" class="img-responsive">
+				</a>
+			</div>
+			<div class="tab icon_menu">
+				<a href="javascript:void(0);" onclick="open_menu('navbar-ex1-collapse')">
+					<img src="images/pageone_38.svg" alt="img" title="img" class="img-responsive icon_menu">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="desk_noti" id="popup-box">
+		<img src="images/index_9.svg" alt="img" title="img" class="img-responsive">
+		<p class="t_1">Gửi thành công !</p>
+		<p>Chúng tôi sẽ sớm liên hệ lại với bạn.</p>
+	</div>
+	<div id="accountModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button type="button" class="close d-desktop" data-dismiss="modal">&times;</button>
+				<div class="modal-body">
+					<ul class="nav nav-pills d-mobile">
+						<li class="active"><a data-toggle="pill" href="#logIn">Đăng nhập</a></li>
+						<li><a data-toggle="pill" href="#signUp">Đăng ký</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="bl_1 tab-pane fade in active" id="logIn">
+							<p class="t_1">Đăng nhập</p>
+							<label for="userName">
+								<p class="t_2">Email/Số điện thoại:</p>
+							</label>
+							<input type="text" name="userName" class="userName form-control" required>
+							<label for="passWord" class="password d-flex">
+								<p class="t_2">Mật khẩu:</p> <a href="#" class="t_3">Quên mật khẩu</a>
+							</label>
+							<div class="d_2">
+								<input type="password" name="passWord" class="passWord form-control" required>
+								<img src="images/pageone_42.svg" alt="img" title="img" class="visible">
+							</div>
+							<a href="javascript:void(0)">
+								<div class="btn_1">
+									<p>Đăng nhập</p>
+									<img src="images/pageone_41.svg" alt="img" title="img">
+								</div>
+							</a>
+							<p class="t_4">Đăng nhập bằng</p>
+							<div class="d_1 d-flex">
+								<a href="#">
+									<div class="btn_1 btn_2">
+										<img src="images/pageone_39.svg" alt="img" title="img">
+										<p>Facebook</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="btn_1 btn_3">
+										<img src="images/pageone_40.svg" alt="img" title="img">
+										<p>Google</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="bl_1 tab-pane fade" id="signUp">
+							<p class="t_1">Đăng Ký</p>
+							<label for="userName">
+								<p class="t_2">Email/Số điện thoại:</p>
+							</label>
+							<input type="text" name="userName" class="userName form-control" required>
+							<label for="passWord">
+								<p class="t_2">Mật khẩu:</p>
+							</label>
+							<div class="d_2">
+								<input type="password" name="passWord" class="passWord form-control" required>
+								<img src="images/pageone_42.svg" alt="img" title="img" class="visible">
+							</div>
+							<label for="dateBirth">
+								<p class="t_2">Ngày sinh:</p>
+							</label>
+							<div class="d_3 d-flex">
+								<select class="form-control" name="date_birth">
+									<option value="">20</option>
+								</select>
+								<select class="form-control" name="month_birth">
+									<option value="">08</option>
+								</select>
+								<select class="form-control" name="year_birth">
+									<option value="">1999</option>
+								</select>
+							</div>
+							<p class="t_5">Bằng việc đăng ký, bạn đã đọc, hiểu và đồng ý
+								với Page One về <a href="">Điều khoản sử dụng & Chính sách bảo mật</a></p>
+							<a href="javascript:void(0)">
+								<div class="btn_1 btn_4">
+									<p>Đăng Ký</p>
+									<img src="images/pageone_41.svg" alt="img" title="img">
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="giftModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<div class="modal-body">
+					<div class="special_menu">
+						<div class="bl_1">
+							<p class="t_0">Quà tặng dành cho bạn:</p>
+						</div>
+						<div class="bl_1 bl_gift d-flex">
+							<div class="bl_2 polygon d-flex">
+								<p class="t_1 polygon">20<sup>%</sup></p>
+								<div>
+									<p class="t_2">Giảm ngay <b>20%</b></p>
+									<p class="t_3">Cho đơn hàng đầu tiên từ 499K</p>
+									<div class="bl_3 d-flex">
+										<div>
+											<p class="t_4">Mã: <b>99998888</b></p>
+											<p class="t_4">HSD: 10.08.2024</p>
+										</div>
+										<a href="#">
+											<div class="btn_1">Chép mã</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="bl_2 polygon d-flex">
+								<p class="t_1 polygon">20<sup>%</sup></p>
+								<div>
+									<p class="t_2">Giảm ngay <b>20%</b></p>
+									<p class="t_3">Cho đơn hàng đầu tiên từ 499K</p>
+									<div class="bl_3 d-flex">
+										<div>
+											<p class="t_4">Mã: <b>99998888</b></p>
+											<p class="t_4">HSD: 10.08.2024</p>
+										</div>
+										<a href="#">
+											<div class="btn_1">Chép mã</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>

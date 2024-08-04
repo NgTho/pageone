@@ -1,0 +1,88 @@
+.research .top_1 .bl_1 {
+  gap: 0px;
+  margin-top: 60px;
+  border: 1px solid #3bb9b7;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .research .top_1 .bl_1 {
+    display: block;
+    padding: 15px;
+    border-radius: 10px;
+    background: #fff;
+    border: none;
+    margin-top: 30px;
+  }
+}
+.research .top_1 .bl_1 .d_2 {
+  background: linear-gradient(75.13deg, #0B63D8 3.6%, #3BB9B7 76.7%);
+  border-radius: 10px;
+  padding: 0px;
+  position: relative;
+  width: 53%;
+  height: 400px;
+}
+.research .top_1 .bl_1 .d_2:hover .img_1 {
+  display: block;
+}
+@media only screen and (max-width: 767px) {
+  .research .top_1 .bl_1 .d_2 {
+    width: 100%;
+  }
+}
+.research .top_1 .bl_1 .d_2 .img_1 {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .research .top_1 .bl_1 .d_2 .img_1 {
+    left: unset;
+    right: 20px;
+    top: unset;
+    bottom: 20px;
+    display: block;
+  }
+}
+.research .top_1 .bl_1 .d_2 .img_2 {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  z-index: 1;
+}
+.research .top_1 .bl_1 .d_2 .img_3 {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.research .top_1 .bl_1 .d_1 {
+  padding: 40px 15px;
+  width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .research .top_1 .bl_1 .d_1 {
+    padding: 20px 15px;
+  }
+}
+.research .top_1 .bl_1 .d_1 .t_1 {
+  font-size: 32px;
+}
+@media only screen and (max-width: 767px) {
+  .research .top_1 .bl_1 .d_1 .t_1 {
+    font-size: 20px;
+  }
+}
+.research .top_1 .bl_1 .d_1 hr {
+  width: 30px;
+  border-top: 5px solid var(--color-blue);
+  margin: 10px 0px 20px;
+}
+@media only screen and (max-width: 767px) {
+  .research .top_1 .bl_1 .d_1 hr {
+    border-top: 3px solid var(--color-blue);
+  }
+}
+.lg-backdrop {
+  z-index: 999 !important;
+}

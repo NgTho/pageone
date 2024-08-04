@@ -1,0 +1,289 @@
+.case_study {
+    .top_1 {
+        margin-top: 30px;
+
+        .col-md-4 {
+            @media only screen and (min-width: 767px) {
+                width: 34%;
+            }
+        }
+
+        .col-md-8 {
+            @media only screen and (min-width: 767px) {
+                width: 66%;
+            }
+        }
+
+        .t_1 {
+            font-size    : 32px;
+            margin-bottom: 15px;
+        }
+
+        .sticky {
+            position: sticky;
+            top     : 100px;
+            z-index : 9;
+
+            @media only screen and (max-width: 767px) {
+                position: fixed;
+                top     : 70px;
+            }
+        }
+
+        .content {
+            @media only screen and (max-width: 767px) {
+                margin-top: 70px;
+            }
+        }
+
+        .bl_1 {
+            border-radius: 10px 0px 0px 10px;
+            background   : linear-gradient(221.35deg, rgb(11, 99, 216) 0.412%, rgb(59, 185, 183) 65.159%);
+            padding      : 25px 0px 25px 10px;
+            color        : #fff;
+            max-height   : 1000px;
+            overflow-y   : auto;
+
+            @media only screen and (max-width: 767px) {
+                overflow     : unset;
+                border-radius: 0px;
+                padding      : 10px 15px;
+                margin-bottom: 20px;
+                position     : relative;
+                z-index      : 9;
+            }
+
+
+
+            .d_1 {
+                @media only screen and (max-width: 767px) {
+                    display        : flex;
+                    align-items    : center;
+                    justify-content: center;
+                    gap            : 10px;
+                    z-index        : 9999;
+
+                }
+
+                .input_1 {
+                    background-image   : url('../images/research_4.svg');
+                    background-repeat  : no-repeat no-repeat;
+                    background-position: 15px;
+                    background-size    : auto;
+                    padding            : 20px 20px 20px 50px;
+                    height             : 50px;
+                    border             : none;
+                    outline            : none;
+                    box-shadow         : none;
+                    background-color   : transparent;
+                    border-radius      : 30px;
+                    border             : 1px solid #fff;
+                    margin             : 0px 0px 0px 15px;
+                    color              : #fff;
+                    width              : 85%;
+
+                    @media only screen and (max-width: 767px) {
+                        background-image   : url('../images/research_4m.svg');
+                        background-position: right 10px top 10px;
+                        width              : 50%;
+                        margin             : 0px;
+                        background-size    : 20px;
+                        height             : 40px;
+                        padding            : 0px 0px 0px 15px;
+                    }
+
+                    &::placeholder {
+                        color: #fff;
+                    }
+                }
+
+                .e_1 {
+                    @media only screen and (max-width: 767px) {
+                        display         : flex;
+                        align-items     : center;
+                        justify-content : center;
+                        gap             : 10px;
+                        background-color: #fff;
+                        border-radius   : 30px;
+                        height          : 40px;
+                        width           : 50%;
+
+                        img {
+                            width : 15px;
+                            height: 10px;
+                        }
+
+                        p {
+                            margin: 0px;
+                        }
+                    }
+
+                }
+            }
+
+            .d_2 {
+                margin-top: 20px;
+
+                @media only screen and (max-width: 767px) {
+                    position        : fixed;
+                    top             : 70px;
+                    right           : -330px;
+                    z-index         : 9999;
+                    width           : 300px;
+                    background-color: #fff;
+                    overflow        : auto;
+                    transition      : 0.5s;
+                    border-right    : 0px solid #ccc;
+                    padding         : 20px 15px;
+                    margin          : 0px;
+                    max-height      : ~'calc(100vh - 140px)';
+                    border-radius   : 20px 0px 0px 20px;
+                }
+
+                a {
+                    font-size    : 16px;
+                    color        : #fff;
+                    position     : relative;
+                    display      : flex;
+                    gap          : 0px;
+                    align-items  : center;
+                    transition   : 0.3s;
+                    padding      : 10px 0px 10px 15px;
+                    margin-bottom: 0px;
+
+                    @media only screen and (max-width: 767px) {
+                        color    : var(--color-normal);
+                        font-size: 13px;
+                        padding  : 10px 0px;
+                    }
+
+                    &:hover,
+                    :active {
+                        background   : rgba(255, 255, 255, 0.15);
+                        border-radius: 20px 0px 0px 20px;
+                        margin-left  : 2px;
+                        cursor       : pointer;
+
+                        &::before {
+                            background-position: 2px;
+                        }
+                    }
+
+                    &::before {
+                        content            : "";
+                        display            : block;
+                        width              : 20px;
+                        height             : 10px;
+                        background-image   : url('../images/case_study_1.svg');
+                        background-repeat  : no-repeat no-repeat;
+                        background-position: 0px;
+                        background-size    : auto;
+                        transition         : 0.3s;
+
+                        @media only screen and (max-width: 767px) {
+                            background-image: url('../images/case_study_1m.svg');
+                        }
+                    }
+
+                    a {
+                        color  : #fff;
+                        display: inline-block;
+                    }
+                }
+            }
+
+            .case_suggest {
+
+
+                @media only screen and (max-width: 767px) {
+                    right        : 0px !important;
+                    position     : absolute !important;
+                    top          : 60px !important;
+                    width        : calc(100vw - 30px) !important;
+                    left         : 0px !important;
+                    border-radius: 0px 0px 20px 20px !important;
+                    transition   : unset !important;
+                    max-height   : 350px !important;
+                    z-index      : 9 !important;
+
+                    /* &::before {
+                        content         : "";
+                        width           : 100vw;
+                        height          : calc(100vh - 130px);
+                        background-color: rgba(0, 0, 0, 0.7);
+                        position        : fixed;
+                        z-index         : 999;
+                        left            : 0;
+                        top             : 130px;
+                    } */
+
+
+                }
+            }
+
+        }
+
+        .bl_2 {
+            background   : #fff;
+            border-radius: 10px;
+            padding      : 25px 45px 35px;
+            margin-bottom: 20px;
+
+            @media only screen and (max-width: 767px) {
+                padding: 20px 15px 30px;
+            }
+
+            &:last-of-type {
+                margin-bottom: 0px;
+            }
+
+            b {
+                font-size  : 20px;
+                font-family: var(--font-bold);
+                color      : var(--color-blue);
+                margin-top : 10px;
+                display    : inline-block;
+
+            }
+
+            img {
+                max-width: 100% !important;
+                height   : auto !important;
+            }
+
+            table {
+                width    : fit-content;
+                margin   : 50px auto 0px;
+                max-width: 100% !important;
+
+                @media only screen and (max-width: 767px) {
+                    margin: 40px auto 0px;
+                }
+
+                td {
+                    border    : none;
+                    text-align: center;
+                    padding   : 0px 10px 20px;
+                }
+
+
+
+                p {
+                    margin: 5px 0px 0px;
+                }
+            }
+        }
+
+
+    }
+
+    .close_case_menu {
+        position        : fixed;
+        width           : 100vw;
+        height          : 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index         : 1;
+        left            : 0;
+        top             : 0px;
+    }
+}

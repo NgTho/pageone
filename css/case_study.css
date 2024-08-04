@@ -1,0 +1,254 @@
+.case_study .top_1 {
+  margin-top: 30px;
+}
+@media only screen and (min-width: 767px) {
+  .case_study .top_1 .col-md-4 {
+    width: 34%;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .case_study .top_1 .col-md-8 {
+    width: 66%;
+  }
+}
+.case_study .top_1 .t_1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+.case_study .top_1 .sticky {
+  position: sticky;
+  top: 100px;
+  z-index: 9;
+}
+@media only screen and (max-width: 767px) {
+  .case_study .top_1 .sticky {
+    position: fixed;
+    top: 70px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .case_study .top_1 .content {
+    margin-top: 70px;
+  }
+}
+.case_study .top_1 .bl_1 {
+  border-radius: 10px 0px 0px 10px;
+  background: linear-gradient(221.35deg, #0b63d8 0.412%, #3bb9b7 65.159%);
+  padding: 25px 0px 25px 10px;
+  color: #fff;
+  max-height: 1000px;
+  overflow-y: auto;
+}
+@media only screen and (max-width: 767px) {
+  .case_study .top_1 .bl_1 {
+    overflow: unset;
+    border-radius: 0px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 9;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .case_study .top_1 .bl_1 .d_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 9999;
+  }
+}
+.case_study .top_1 .bl_1 .d_1 .input_1 {
+  background-image: url('../images/research_4.svg');
+  background-repeat: no-repeat no-repeat;
+  background-position: 15px;
+  background-size: auto;
+  padding: 20px 20px 20px 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  margin: 0px 0px 0px 15px;
+  color: #fff;
+  width: 85%;
+}
+@media only screen and (max-width: 767px) {
+  .case_study .top_1 .bl_1 .d_1 .input_1 {
+    background-image: url('../images/research_4m.svg');
+    background-position: right 10px top 10px;
+    width: 50%;
+    margin: 0px;
+    background-size: 20px;
+    height: 40px;
+    padding: 0px 0px 0px 15px;
+  }
+}
+.case_study .top_1 .bl_1 .d_1 .input_1::placeholder {
+  color: #fff;
+}
+@media only screen and (max-width: 767px) {
+  .case_study .top_1 .bl_1 .d_1 .e_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 40px;
+    width: 50%;
+  }
+  .case_study .top_1 .bl_1 .d_1 .e_1 img {
+    width: 15px;
+    height: 10px;
+  }
+  .case_study .top_1 .bl_1 .d_1 .e_1 p {
+    margin: 0px;
+  }
+}
+.case_study .top_1 .bl_1 .d_2 {
+  margin-top: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .case_study .top_1 .bl_1 .d_2 {
+    position: fixed;
+    top: 70px;
+    right: -330px;
+    z-index: 9999;
+    width: 300px;
+    background-color: #fff;
+    overflow: auto;
+    transition: 0.5s;
+    border-right: 0px solid #ccc;
+    padding: 20px 15px;
+    margin: 0px;
+    max-height: calc(100vh - 140px);
+    border-radius: 20px 0px 0px 20px;
+  }
+}
+.case_study .top_1 .bl_1 .d_2 a {
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  display: flex;
+  gap: 0px;
+  align-items: center;
+  transition: 0.3s;
+  padding: 10px 0px 10px 15px;
+  margin-bottom: 0px;
+}
+@media only screen and (max-width: 767px) {
+  .case_study .top_1 .bl_1 .d_2 a {
+    color: var(--color-normal);
+    font-size: 13px;
+    padding: 10px 0px;
+  }
+}
+.case_study .top_1 .bl_1 .d_2 a:hover,
+.case_study .top_1 .bl_1 .d_2 a :active {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px 0px 0px 20px;
+  margin-left: 2px;
+  cursor: pointer;
+}
+.case_study .top_1 .bl_1 .d_2 a:hover::before,
+.case_study .top_1 .bl_1 .d_2 a :active::before {
+  background-position: 2px;
+}
+.case_study .top_1 .bl_1 .d_2 a::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 10px;
+  background-image: url('../images/case_study_1.svg');
+  background-repeat: no-repeat no-repeat;
+  background-position: 0px;
+  background-size: auto;
+  transition: 0.3s;
+}
+@media only screen and (max-width: 767px) {
+  .case_study .top_1 .bl_1 .d_2 a::before {
+    background-image: url('../images/case_study_1m.svg');
+  }
+}
+.case_study .top_1 .bl_1 .d_2 a a {
+  color: #fff;
+  display: inline-block;
+}
+@media only screen and (max-width: 767px) {
+  .case_study .top_1 .bl_1 .case_suggest {
+    right: 0px !important;
+    position: absolute !important;
+    top: 60px !important;
+    width: calc(100vw - 30px) !important;
+    left: 0px !important;
+    border-radius: 0px 0px 20px 20px !important;
+    transition: unset !important;
+    max-height: 350px !important;
+    z-index: 9 !important;
+    /* &::before {
+                        content         : "";
+                        width           : 100vw;
+                        height          : calc(100vh - 130px);
+                        background-color: rgba(0, 0, 0, 0.7);
+                        position        : fixed;
+                        z-index         : 999;
+                        left            : 0;
+                        top             : 130px;
+                    } */
+  }
+}
+.case_study .top_1 .bl_2 {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px 45px 35px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .case_study .top_1 .bl_2 {
+    padding: 20px 15px 30px;
+  }
+}
+.case_study .top_1 .bl_2:last-of-type {
+  margin-bottom: 0px;
+}
+.case_study .top_1 .bl_2 b {
+  font-size: 20px;
+  font-family: var(--font-bold);
+  color: var(--color-blue);
+  margin-top: 10px;
+  display: inline-block;
+}
+.case_study .top_1 .bl_2 img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+.case_study .top_1 .bl_2 table {
+  width: fit-content;
+  margin: 50px auto 0px;
+  max-width: 100% !important;
+}
+@media only screen and (max-width: 767px) {
+  .case_study .top_1 .bl_2 table {
+    margin: 40px auto 0px;
+  }
+}
+.case_study .top_1 .bl_2 table td {
+  border: none;
+  text-align: center;
+  padding: 0px 10px 20px;
+}
+.case_study .top_1 .bl_2 table p {
+  margin: 5px 0px 0px;
+}
+.case_study .close_case_menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  left: 0;
+  top: 0px;
+}

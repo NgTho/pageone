@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Hemanut</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="vendor/jquery-1.11.1.min.js"></script>
+	<script src="vendor/bootstrap.min.js"></script>
+	<script src="vendor/owl.carousel.min.js"></script>
+	<script src="vendor/bootstrap-rating.min.js"></script>
+	<script src="vendor/jquery.fancybox.min.js"></script>
+	<script src="js/jquery.lazy.min.js"></script>
+	<script src="js/index.js"></script>
+	<link href="vendor/bootstrap.min.css" rel="stylesheet">
+	<link href="vendor/owl.carousel.min.css" rel="stylesheet">
+	<link href="vendor/bootstrap-rating.css" rel="stylesheet">
+	<link href="vendor/jquery.fancybox.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/all.css">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container ">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 top">
+						<div class="navbar_left">
+							<a class="" href="">
+								<img src="images/pageone_1.svg" alt="img" title="img"
+									class="img-responsive logo_desk img">
+							</a>
+						</div>
+						<div class="navbar_right">
+							<div class="d-desktop">
+								<form action="" class="form_search" method="get">
+									<input class="form-control input_search" type="text" placeholder="Tìm kiếm sản phẩm"
+										name="" required>
+									<button type="submit"><img src="images/pageone_2.svg" alt="img"
+											title="img"></button>
+								</form>
+
+								<div>
+									<a href="javascript:void(0);" data-toggle="modal" data-target="#accountModal">
+										<img src="images/pageone_3.svg" alt="img" title="img" class="img">
+										<p>Tài khoản</p>
+									</a>
+
+								</div>
+								<div>
+									<a href="#" class="cart">
+										<img src="images/pageone_4.svg" alt="cart" title="cart" class="img">
+										<div class="num">2</div>
+										<p>Giỏ hàng</p>
+									</a>
+								</div>
+							</div>
+							<div class="d-mobile">
+								<a href="javascript:void(0);" onclick="open_menu('navbar-ex1-collapse')">
+									<img src="images/pageone_33.svg" alt="img" title="img">
+								</a>
+							</div>
+
+						</div>
+						<div class="popup_cart" style="display: none;">
+							<div class="bl_1">
+								<p class="t_0"><b>Giỏ hàng</b> <span>(02)</span></p>
+							</div>
+							<div class="bl_1">
+								<div class="item">
+									<a href="#">
+										<img src="images/pageone_6.jpg" alt="img" title="img" class="img_1">
+									</a>
+									<div class="d_1">
+										<a href="#">
+											<p class="t_1">Matrix Repair Pro + Exosome Serum - Chống lão hóa, xóa...</p>
+										</a>
+										<p class="t_2">1 x <span>525.000đ</span></p>
+									</div>
+									<a href="javascript:void(0)" class="del_cart">
+										<img src="images/pageone_43.svg" alt="img" title="img">
+									</a>
+								</div>
+								<div class="item">
+									<a href="#">
+										<img src="images/pageone_6.jpg" alt="img" title="img" class="img_1">
+									</a>
+									<div class="d_1">
+										<a href="#">
+											<p class="t_1">Matrix Repair Pro + Exosome Serum - Chống lão hóa, xóa...</p>
+										</a>
+										<p class="t_2">1 x <span>525.000đ</span></p>
+									</div>
+									<a href="javascript:void(0)" class="del_cart">
+										<img src="images/pageone_43.svg" alt="img" title="img">
+									</a>
+								</div>
+
+							</div>
+							<div class="bl_1">
+								<div class="bl_2 d-flex">
+									<p class="t_1">Tổng cộng:</p>
+									<p><b>1.575.000đ</b></p>
+								</div>
+								<a href="javascript:void(0)">
+									<div class="btn_1">
+										<p>Xem Giỏ Hàng</p>
+										<img src="images/pageone_41.svg" alt="img" title="img">
+									</div>
+								</a>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bottom">
+						<div class="collapse navbar-collapse navbar-ex1-collapse menu">
+							<form action="" class="form_search d-mobile" method="get">
+								<input class="form-control input_search" type="text" placeholder="Tìm kiếm sản phẩm"
+									name="" required>
+								<button type="submit"><img src="images/pageone_2.svg" alt="img" title="img"></button>
+							</form>
+							<ul class="nav navbar-nav">
+								<li><a href="">Về PageOne</a></li>
+								<li><a href="">Sản phẩm</a></li>
+								<li class="dropdown">
+									<a href="javascript:void(0);" onclick="openGiftModal()">Quà
+										tặng</a>
+									<p class="t_hot polygon">Hot</p>
+									<ul class="dropdown-menu special_menu">
+										<div class="bl_1">
+											<p class="t_0">Quà tặng dành cho bạn:</p>
+										</div>
+										<div class="bl_1 bl_gift d-flex">
+											<div class="bl_2 polygon d-flex">
+												<p class="t_1 polygon">20<sup>%</sup></p>
+												<div>
+													<p class="t_2">Giảm ngay <b>20%</b></p>
+													<p class="t_3">Cho đơn hàng đầu tiên từ 499K</p>
+													<div class="bl_3 d-flex">
+														<div>
+															<p class="t_4">Mã: <b>99998888</b></p>
+															<p class="t_4">HSD: 10.08.2024</p>
+														</div>
+														<a href="#">
+															<div class="btn_1">Chép mã</div>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="bl_2 polygon d-flex">
+												<p class="t_1 polygon">20<sup>%</sup></p>
+												<div>
+													<p class="t_2">Giảm ngay <b>20%</b></p>
+													<p class="t_3">Cho đơn hàng đầu tiên từ 499K</p>
+													<div class="bl_3 d-flex">
+														<div>
+															<p class="t_4">Mã: <b>99998888</b></p>
+															<p class="t_4">HSD: 10.08.2024</p>
+														</div>
+														<a href="#">
+															<div class="btn_1">Chép mã</div>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</ul>
+								</li>
+								<li><a href="">Thành phần</a></li>
+								<li><a href="">Công nghệ chăm da</a></li>
+								<li><a href="">Thông tin</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+	</header>
+
+
+	<div class="slider_desktop carousel">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="owl-carousel owl-theme">
+						<div class="item">
+							<a href="" target="_self" title="">
+								<img data-src="images/pageone_5.jpg" alt="" rel="noffolow"
+									class="owl-lazy img-responsive">
+							</a>
+						</div>
+						<div class="item">
+							<a href="" target="_self" title="">
+								<img data-src="images/pageone_5.jpg" alt="" rel="noffolow"
+									class="owl-lazy img-responsive">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="index">
+		<div class="top_1">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="bg_head">
+							<p class="t_head">SẢN PHẨM BÁN CHẠY</p>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<div class="block_product block_product_special">
+							<a href="">
+								<div class="bl_1">
+									<img src="images/pageone_6.jpg" alt="img" title="img" class="img-responsive img_1">
+									<img src="images/pageone_6_2.jpg" alt="img" title="img"
+										class="img-responsive img_2">
+								</div>
+							</a>
+							<a href="">
+								<div class="bl_2">
+									<p class="t_1">Matrix Repair Pro + Exosome Serum - Chống lão hóa, xóa...</p>
+									<div class="bl_3">
+										<div class="bl_4 d-flex">
+											<div class="bl_5 d-flex">
+												<p class="t_2">525.000đ</p>
+												<p class="t_3">750.000đ</p>
+											</div>
+											<p class="polygon">30%</p>
+										</div>
+										<input type="hidden" class="rating" value="4.5" disabled="disabled"
+											data-filled="fas fa-star" data-empty="far fa-star" />
+									</div>
+
+									<a href="#">
+										<div class="btn_1 d-flex">
+											<span>Thêm vào giỏ hàng</span>
+										</div>
+									</a>
+								</div>
+							</a>
+							<div class="tag_gift">
+								<img src="images/pageone_7.svg" alt="img" title="img">
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<div class=" block_product block_product_special">
+							<a href="">
+								<div class="bl_1">
+									<img src="images/pageone_6.jpg" alt="img" title="img" class="img-responsive img_1">
+									<img src="images/pageone_6_2.jpg" alt="img" title="img"
+										class="img-responsive img_2">
+								</div>
+							</a>
+							<a href="">
+								<div class="bl_2">
+									<p class="t_1">Matrix Repair Pro + Exosome Serum - Chống lão hóa, xóa...</p>
+									<div class="bl_3">
+										<div class="bl_4 d-flex">
+											<div class="bl_5 d-flex">
+												<p class="t_2">525.000đ</p>
+												<p class="t_3">750.000đ</p>
+											</div>
+											<p class="polygon">30%</p>
+										</div>
+										<input type="hidden" class="rating" value="4.5" disabled="disabled"
+											data-filled="fas fa-star" data-empty="far fa-star" />
+									</div>
+									<a href="#">
+										<div class="btn_1 d-flex">
+											<span>Thêm vào giỏ hàng</span>
+										</div>
+									</a>
+								</div>
+							</a>
+							<div class="tag_gift">
+								<img src="images/pageone_7.svg" alt="img" title="img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="top_2">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<picture>
+							<source media="(max-width: 767px)" srcset="images/pageone_9m.jpg" alt="img" title="img"
+								rel="noffolow">
+							<img src="images/pageone_9.jpg" alt="img" title="img" class="img-responsive img_banner">
+						</picture>
+					</div>
+					<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 bl_0">
+						<div class="row">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+								<div class="block_product">
+									<a href="">
+										<div class="bl_1">
+											<img src="images/pageone_26.jpg" alt="img" title="img"
+												class="img-responsive img_1">
+											<img src="images/pageone_26_2.jpg" alt="img" title="img"
+												class="img-responsive img_2">
+										</div>
+									</a>
+									<a href="">
+										<div class="bl_2">
+											<p class="t_1">Matrix Repair Pro + Exosome Serum - Chống lão hóa, xóa...
+											</p>
+											<div class="bl_3">
+												<div class="bl_4 d-flex">
+													<div class="bl_5 d-flex">
+														<p class="t_2">525.000đ</p>
+														<p class="t_3">750.000đ</p>
+													</div>
+
+													<p class="polygon">30%</p>
+												</div>
+												<input type="hidden" class="rating" value="4.5" disabled="disabled"
+													data-filled="fas fa-star" data-empty="far fa-star" />
+											</div>
+											<a href="#">
+												<div class="btn_1 d-flex">
+													<span>Thêm vào giỏ hàng</span>
+												</div>
+											</a>
+										</div>
+									</a>
+									<div class="tag_gift">
+										<img src="images/pageone_7.svg" alt="img" title="img">
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+								<div class="block_product">
+									<a href="">
+										<div class="bl_1">
+											<img src="images/pageone_26.jpg" alt="img" title="img"
+												class="img-responsive img_1">
+											<img src="images/pageone_26_2.jpg" alt="img" title="img"
+												class="img-responsive img_2">
+										</div>
+									</a>
+									<a href="">
+										<div class="bl_2">
+											<p class="t_1">Matrix Repair Pro + Exosome Serum - Chống lão hóa, xóa...
+											</p>
+											<div class="bl_3">
+												<div class="bl_4 d-flex">
+													<div class="bl_5 d-flex">
+														<p class="t_2">525.000đ</p>
+														<p class="t_3">750.000đ</p>
+													</div>
+
+													<p class="polygon">30%</p>
+												</div>
+												<input type="hidden" class="rating" value="4.5" disabled="disabled"
+													data-filled="fas fa-star" data-empty="far fa-star" />
+											</div>
+											<a href="#">
+												<div class="btn_1 d-flex">
+													<span>Thêm vào giỏ hàng</span>
+												</div>
+											</a>
+										</div>
+									</a>
+									<div class="tag_gift">
+										<img src="images/pageone_7.svg" alt="img" title="img">
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+								<div class="block_product">
+									<a href="">
+										<div class="bl_1">
+											<img src="images/pageone_26.jpg" alt="img" title="img"
+												class="img-responsive img_1">
+											<img src="images/pageone_26_2.jpg" alt="img" title="img"
+												class="img-responsive img_2">
+										</div>
+									</a>
+									<a href="">
+										<div class="bl_2">
+											<p class="t_1">Matrix Repair Pro + Exosome Serum - Chống lão hóa, xóa...
+											</p>
+											<div class="bl_3">
+												<div class="bl_4 d-flex">
+													<div class="bl_5 d-flex">
+														<p class="t_2">525.000đ</p>
+														<p class="t_3">750.000đ</p>
+													</div>
+
+													<p class="polygon">30%</p>
+												</div>
+												<input type="hidden" class="rating" value="4.5" disabled="disabled"
+													data-filled="fas fa-star" data-empty="far fa-star" />
+											</div>
+											<a href="#">
+												<div class="btn_1 d-flex">
+													<span>Thêm vào giỏ hàng</span>
+												</div>
+											</a>
+										</div>
+									</a>
+									<div class="tag_gift">
+										<img src="images/pageone_7.svg" alt="img" title="img">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top_3">
+			<div class="container">
+				<div class="row d-desktop">
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<div class="slider_cat carousel">
+							<div class="owl-carousel owl-theme">
+								<div class="item">
+									<a href="" target="_self" title="">
+										<img data-src="images/pageone_11.jpg" alt="" rel="noffolow"
+											class="owl-lazy img-responsive">
+									</a>
+								</div>
+								<div class="item">
+									<a href="" target="_self" title="">
+										<img data-src="images/pageone_11_2.jpg" alt="" rel="noffolow"
+											class="owl-lazy img-responsive">
+									</a>
+								</div>
+							</div>
+							<div class="owl-theme">
+								<div class="owl-controls">
+									<div class="custom-nav owl-nav"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<a href="">
+							<div class="bl_1">
+								<img src="images/pageone_12.jpg" alt="img" title="img" class="img-responsive">
+								<p class="t_1">SẢN PHẨM ĐƯỢC YÊU THÍCH</p>
+							</div>
+						</a>
+
+					</div>
+				</div>
+				<div class="row d-mobile">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="slider_cat_m carousel">
+							<div class="owl-carousel owl-theme">
+								<div class="item">
+									<a href="" target="_self" title="">
+										<img src="images/pageone_11m.jpg" alt="" rel="noffolow" class="img-responsive">
+										<div class="bl_1">
+											<p><b>CÔNG DỤNG:</b></p>
+											<ul>
+												<li>Điều trị ngăn ngừa sạm nám, tàn nhang</li>
+												<li>Điều trị và ngăn ngừa tăng sắc tố sau viêm</li>
+												<li>Điều trị hồng ban, thâm mụn</li>
+												<li>Cải thiện sắc tố da, đều màu da</li>
+												<li>Ngăn ngừa lão hóa da</li>
+											</ul>
+										</div>
+
+									</a>
+								</div>
+								<div class="item">
+									<a href="" target="_self" title="">
+										<img src="images/pageone_11_2m.jpg" alt="" rel="noffolow"
+											class="img-responsive">
+										<div class="bl_1">
+											<p><b>CÔNG DỤNG:</b></p>
+											<ul>
+												<li>Điều trị ngăn ngừa sạm nám, tàn nhang</li>
+												<li>Điều trị và ngăn ngừa tăng sắc tố sau viêm</li>
+												<li>Điều trị hồng ban, thâm mụn</li>
+												<li>Cải thiện sắc tố da, đều màu da</li>
+												<li>Ngăn ngừa lão hóa da</li>
+											</ul>
+										</div>
+
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top_4">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p class="t_head">QUÀ TẶNG DÀNH CHO BẠN</p>
+						<div class="bl_gift d-flex">
+							<div class="bl_2 polygon d-flex">
+								<p class="t_1 polygon">20<sup>%</sup></p>
+								<div>
+									<p class="t_2">Giảm ngay <b>20%</b></p>
+									<p class="t_3">Cho đơn hàng đầu tiên từ 499K</p>
+									<div class="bl_3 d-flex">
+										<div>
+											<p class="t_4">Mã: <b>99998888</b></p>
+											<p class="t_4">HSD: 10.08.2024</p>
+										</div>
+										<a href="#">
+											<div class="btn_1">Chép mã</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="bl_2 polygon d-flex">
+								<p class="t_1 polygon">20<sup>%</sup></p>
+								<div>
+									<p class="t_2">Giảm ngay <b>20%</b></p>
+									<p class="t_3">Cho đơn hàng đầu tiên từ 499K</p>
+									<div class="bl_3 d-flex">
+										<div>
+											<p class="t_4">Mã: <b>99998888</b></p>
+											<p class="t_4">HSD: 10.08.2024</p>
+										</div>
+										<a href="#">
+											<div class="btn_1">Chép mã</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top_5">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p class="t_head d-mobile">FEEDBACK TỪ KHÁCH HÀNG</p>
+						<div class="slider_feedback carousel">
+							<div class="owl-carousel owl-theme">
+								<div class="item">
+									<div class="bl_1 d-flex">
+										<img data-src="images/pageone_32.jpg" alt="img" title="img" rel="noffolow"
+											class="owl-lazy img-responsive img_1">
+										<div class="bl_2">
+											<p class="t_1">Chị <b>Nguyễn Kim Anh</b></p>
+											<p class="t_2">Lorem Ipsum is simply dummy text of the printing and
+												typesetting industry. Lorem Ipsum has been the industry's standard
+												dummy text ever since the 1500s, when an unknown printer took a galley
+												of type and scrambled it to make a type specimen</p>
+											<div class="emoji">
+												<div>
+													<svg width="25" height="25" viewBox="0 0 28 29" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M13.9337 27.843C12.2352 27.843 10.5534 27.504 8.98418 26.8452C7.41499 26.1864 5.98919 25.2209 4.78819 24.0036C3.58718 22.7864 2.6345 21.3413 1.98452 19.751C1.33454 18.1606 1 16.456 1 14.7346C1 13.0131 1.33454 11.3086 1.98452 9.71817C2.6345 8.12778 3.58718 6.68271 4.78819 5.46548C5.98919 4.24824 7.41499 3.28268 8.98418 2.62392C10.5534 1.96516 12.2352 1.6261 13.9337 1.6261C17.3639 1.6261 20.6536 3.00716 23.0792 5.46548C25.5047 7.92379 26.8674 11.258 26.8674 14.7346C26.8674 18.2111 25.5047 21.5453 23.0792 24.0036C20.6536 26.462 17.3639 27.843 13.9337 27.843Z"
+															stroke="#777676" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+														<path
+															d="M8.1853 20.5604L9.62238 19.1039L11.778 20.5604L13.9336 19.1039L16.0892 20.5604L18.2448 19.1039L19.6819 20.5604M8.90384 14.0062L11.0595 11.8215L8.90384 9.63672M18.9634 14.0062L16.8078 11.8215L18.9634 9.63672"
+															stroke="#777676" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</div>
+												<div>
+													<svg width="25" height="25" viewBox="0 0 29 29" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M10.1699 11.293H10.1844M18.9089 11.293H18.9234M1.43091 14.206C1.43091 15.9274 1.76997 17.632 2.42873 19.2224C3.08749 20.8128 4.05305 22.2578 5.27029 23.4751C6.48752 24.6923 7.93259 25.6579 9.52298 26.3166C11.1134 26.9754 12.8179 27.3145 14.5394 27.3145C16.2608 27.3145 17.9654 26.9754 19.5558 26.3166C21.1462 25.6579 22.5912 24.6923 23.8084 23.4751C25.0257 22.2578 25.9912 20.8128 26.65 19.2224C27.3088 17.632 27.6478 15.9274 27.6478 14.206C27.6478 12.4846 27.3088 10.78 26.65 9.1896C25.9912 7.59921 25.0257 6.15415 23.8084 4.93691C22.5912 3.71968 21.1462 2.75412 19.5558 2.09536C17.9654 1.43659 16.2608 1.09753 14.5394 1.09753C12.8179 1.09753 11.1134 1.43659 9.52298 2.09536C7.93259 2.75412 6.48752 3.71968 5.27029 4.93691C4.05305 6.15415 3.08749 7.59921 2.42873 9.1896C1.76997 10.78 1.43091 12.4846 1.43091 14.206Z"
+															stroke="#777676" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+														<path
+															d="M10.8982 18.9396C11.3728 18.4552 11.9394 18.0703 12.5646 17.8076C13.1899 17.5449 13.8612 17.4095 14.5394 17.4095C15.2176 17.4095 15.889 17.5449 16.5143 17.8076C17.1395 18.0703 17.706 18.4552 18.1807 18.9396"
+															stroke="#777676" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+
+												</div>
+												<div>
+													<svg width="25" height="25" viewBox="0 0 29 29" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M10.0217 11.3731H10.0361M18.6531 11.3731H18.6675M10.0217 18.7127H18.6531M1.39026 14.3089C1.39026 16.0439 1.72515 17.7618 2.3758 19.3647C3.02646 20.9676 3.98014 22.424 5.18239 23.6508C6.38465 24.8776 7.81193 25.8507 9.38275 26.5146C10.9536 27.1786 12.6372 27.5203 14.3374 27.5203C16.0377 27.5203 17.7213 27.1786 19.2921 26.5146C20.8629 25.8507 22.2902 24.8776 23.4924 23.6508C24.6947 22.424 25.6484 20.9676 26.299 19.3647C26.9497 17.7618 27.2846 16.0439 27.2846 14.3089C27.2846 12.574 26.9497 10.856 26.299 9.25314C25.6484 7.65026 24.6947 6.19385 23.4924 4.96706C22.2902 3.74027 20.8629 2.76713 19.2921 2.10319C17.7213 1.43926 16.0377 1.09753 14.3374 1.09753C12.6372 1.09753 10.9536 1.43926 9.38275 2.10319C7.81193 2.76713 6.38465 3.74027 5.18239 4.96706C3.98014 6.19385 3.02646 7.65026 2.3758 9.25314C1.72515 10.856 1.39026 12.574 1.39026 14.3089Z"
+															stroke="#777676" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+
+												</div>
+												<div>
+													<svg width="25" height="25" viewBox="0 0 30 29" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M10.5601 11.293H10.5747M19.2991 11.293H19.3137M1.82117 14.206C1.82117 15.9274 2.16023 17.632 2.81899 19.2224C3.47775 20.8128 4.44331 22.2578 5.66055 23.4751C6.87778 24.6923 8.32285 25.6579 9.91324 26.3166C11.5036 26.9754 13.2082 27.3145 14.9296 27.3145C16.6511 27.3145 18.3556 26.9754 19.946 26.3166C21.5364 25.6579 22.9815 24.6923 24.1987 23.4751C25.4159 22.2578 26.3815 20.8128 27.0403 19.2224C27.699 17.632 28.0381 15.9274 28.0381 14.206C28.0381 12.4846 27.699 10.78 27.0403 9.1896C26.3815 7.59921 25.4159 6.15415 24.1987 4.93691C22.9815 3.71968 21.5364 2.75412 19.946 2.09536C18.3556 1.43659 16.6511 1.09753 14.9296 1.09753C13.2082 1.09753 11.5036 1.43659 9.91324 2.09536C8.32285 2.75412 6.87778 3.71968 5.66055 4.93691C4.44331 6.15415 3.47775 7.59921 2.81899 9.1896C2.16023 10.78 1.82117 12.4846 1.82117 14.206Z"
+															stroke="#777676" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+														<path
+															d="M11.2883 18.5756C11.763 19.06 12.3295 19.4448 12.9547 19.7076C13.58 19.9703 14.2514 20.1056 14.9296 20.1056C15.6078 20.1056 16.2792 19.9703 16.9044 19.7076C17.5296 19.4448 18.0962 19.06 18.5708 18.5756"
+															stroke="#777676" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</div>
+												<div class="active">
+													<svg width="25" height="25" viewBox="0 0 30 30" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M27.3471 14.2943C27.347 11.6403 26.552 9.0488 25.0673 6.86261C23.5826 4.67641 21.4781 2.99848 19.0321 2.05072C16.5861 1.10296 13.9139 0.930013 11.3689 1.55476C8.82384 2.17951 6.52585 3.57251 4.77883 5.54955C3.03181 7.52659 1.91806 9.99453 1.58487 12.627C1.25168 15.2594 1.71475 17.9324 2.91284 20.2923C4.11093 22.6523 5.98759 24.588 8.29465 25.8436C10.6017 27.0992 13.2305 27.6155 15.8333 27.3241M10.1022 11.3813H10.1166M18.7247 11.3813H18.739"
+															stroke="#777676" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+														<path
+															d="M10.8208 18.6638C11.3469 19.1762 11.9742 19.5697 12.6614 19.8182C13.3486 20.0668 14.08 20.1648 14.8072 20.1057M24.4644 28.131L28.083 24.3733C28.532 23.9019 28.7835 23.2725 28.7846 22.6172C28.7856 21.9619 28.5362 21.3317 28.0887 20.8588C27.871 20.6282 27.6096 20.4446 27.3202 20.319C27.0308 20.1934 26.7194 20.1282 26.4045 20.1276C26.0897 20.1269 25.778 20.1906 25.4881 20.315C25.1981 20.4394 24.936 20.6219 24.7173 20.8515L24.4759 21.102L24.2345 20.8515C24.0167 20.621 23.7552 20.4376 23.4658 20.3121C23.1763 20.1865 22.8648 20.1215 22.55 20.121C22.2352 20.1205 21.9235 20.1844 21.6336 20.3089C21.3437 20.4334 21.0816 20.616 20.8631 20.8456C20.4144 21.317 20.1632 21.9461 20.1622 22.601C20.1611 23.2559 20.4102 23.8859 20.8573 24.3587L24.4644 28.131Z"
+															stroke="#777676" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<div class="item">
+									<div class="bl_1 d-flex">
+										<img data-src="images/pageone_32.jpg" alt="img" title="img" rel="noffolow"
+											class="owl-lazy img-responsive img_1">
+										<div class="bl_2">
+											<p class="t_1">Chị <b>Nguyễn Kim Anh</b></p>
+											<p class="t_2">Lorem Ipsum is simply dummy text of the printing and
+												typesetting industry. Lorem Ipsum has been the industry's standard
+												dummy text ever since the 1500s, when an unknown printer took a galley
+												of type and scrambled it to make a type specimen</p>
+											<div class="emoji">
+												<div>
+													<svg width="25" height="25" viewBox="0 0 28 29" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M13.9337 27.843C12.2352 27.843 10.5534 27.504 8.98418 26.8452C7.41499 26.1864 5.98919 25.2209 4.78819 24.0036C3.58718 22.7864 2.6345 21.3413 1.98452 19.751C1.33454 18.1606 1 16.456 1 14.7346C1 13.0131 1.33454 11.3086 1.98452 9.71817C2.6345 8.12778 3.58718 6.68271 4.78819 5.46548C5.98919 4.24824 7.41499 3.28268 8.98418 2.62392C10.5534 1.96516 12.2352 1.6261 13.9337 1.6261C17.3639 1.6261 20.6536 3.00716 23.0792 5.46548C25.5047 7.92379 26.8674 11.258 26.8674 14.7346C26.8674 18.2111 25.5047 21.5453 23.0792 24.0036C20.6536 26.462 17.3639 27.843 13.9337 27.843Z"
+															stroke="#777676" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+														<path
+															d="M8.1853 20.5604L9.62238 19.1039L11.778 20.5604L13.9336 19.1039L16.0892 20.5604L18.2448 19.1039L19.6819 20.5604M8.90384 14.0062L11.0595 11.8215L8.90384 9.63672M18.9634 14.0062L16.8078 11.8215L18.9634 9.63672"
+															stroke="#777676" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</div>
+												<div>
+													<svg width="25" height="25" viewBox="0 0 29 29" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M10.1699 11.293H10.1844M18.9089 11.293H18.9234M1.43091 14.206C1.43091 15.9274 1.76997 17.632 2.42873 19.2224C3.08749 20.8128 4.05305 22.2578 5.27029 23.4751C6.48752 24.6923 7.93259 25.6579 9.52298 26.3166C11.1134 26.9754 12.8179 27.3145 14.5394 27.3145C16.2608 27.3145 17.9654 26.9754 19.5558 26.3166C21.1462 25.6579 22.5912 24.6923 23.8084 23.4751C25.0257 22.2578 25.9912 20.8128 26.65 19.2224C27.3088 17.632 27.6478 15.9274 27.6478 14.206C27.6478 12.4846 27.3088 10.78 26.65 9.1896C25.9912 7.59921 25.0257 6.15415 23.8084 4.93691C22.5912 3.71968 21.1462 2.75412 19.5558 2.09536C17.9654 1.43659 16.2608 1.09753 14.5394 1.09753C12.8179 1.09753 11.1134 1.43659 9.52298 2.09536C7.93259 2.75412 6.48752 3.71968 5.27029 4.93691C4.05305 6.15415 3.08749 7.59921 2.42873 9.1896C1.76997 10.78 1.43091 12.4846 1.43091 14.206Z"
+															stroke="#777676" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+														<path
+															d="M10.8982 18.9396C11.3728 18.4552 11.9394 18.0703 12.5646 17.8076C13.1899 17.5449 13.8612 17.4095 14.5394 17.4095C15.2176 17.4095 15.889 17.5449 16.5143 17.8076C17.1395 18.0703 17.706 18.4552 18.1807 18.9396"
+															stroke="#777676" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+
+												</div>
+												<div>
+													<svg width="25" height="25" viewBox="0 0 29 29" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M10.0217 11.3731H10.0361M18.6531 11.3731H18.6675M10.0217 18.7127H18.6531M1.39026 14.3089C1.39026 16.0439 1.72515 17.7618 2.3758 19.3647C3.02646 20.9676 3.98014 22.424 5.18239 23.6508C6.38465 24.8776 7.81193 25.8507 9.38275 26.5146C10.9536 27.1786 12.6372 27.5203 14.3374 27.5203C16.0377 27.5203 17.7213 27.1786 19.2921 26.5146C20.8629 25.8507 22.2902 24.8776 23.4924 23.6508C24.6947 22.424 25.6484 20.9676 26.299 19.3647C26.9497 17.7618 27.2846 16.0439 27.2846 14.3089C27.2846 12.574 26.9497 10.856 26.299 9.25314C25.6484 7.65026 24.6947 6.19385 23.4924 4.96706C22.2902 3.74027 20.8629 2.76713 19.2921 2.10319C17.7213 1.43926 16.0377 1.09753 14.3374 1.09753C12.6372 1.09753 10.9536 1.43926 9.38275 2.10319C7.81193 2.76713 6.38465 3.74027 5.18239 4.96706C3.98014 6.19385 3.02646 7.65026 2.3758 9.25314C1.72515 10.856 1.39026 12.574 1.39026 14.3089Z"
+															stroke="#777676" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+
+												</div>
+												<div>
+													<svg width="25" height="25" viewBox="0 0 30 29" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M10.5601 11.293H10.5747M19.2991 11.293H19.3137M1.82117 14.206C1.82117 15.9274 2.16023 17.632 2.81899 19.2224C3.47775 20.8128 4.44331 22.2578 5.66055 23.4751C6.87778 24.6923 8.32285 25.6579 9.91324 26.3166C11.5036 26.9754 13.2082 27.3145 14.9296 27.3145C16.6511 27.3145 18.3556 26.9754 19.946 26.3166C21.5364 25.6579 22.9815 24.6923 24.1987 23.4751C25.4159 22.2578 26.3815 20.8128 27.0403 19.2224C27.699 17.632 28.0381 15.9274 28.0381 14.206C28.0381 12.4846 27.699 10.78 27.0403 9.1896C26.3815 7.59921 25.4159 6.15415 24.1987 4.93691C22.9815 3.71968 21.5364 2.75412 19.946 2.09536C18.3556 1.43659 16.6511 1.09753 14.9296 1.09753C13.2082 1.09753 11.5036 1.43659 9.91324 2.09536C8.32285 2.75412 6.87778 3.71968 5.66055 4.93691C4.44331 6.15415 3.47775 7.59921 2.81899 9.1896C2.16023 10.78 1.82117 12.4846 1.82117 14.206Z"
+															stroke="#777676" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+														<path
+															d="M11.2883 18.5756C11.763 19.06 12.3295 19.4448 12.9547 19.7076C13.58 19.9703 14.2514 20.1056 14.9296 20.1056C15.6078 20.1056 16.2792 19.9703 16.9044 19.7076C17.5296 19.4448 18.0962 19.06 18.5708 18.5756"
+															stroke="#777676" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</div>
+												<div class="active">
+													<svg width="25" height="25" viewBox="0 0 30 30" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M27.3471 14.2943C27.347 11.6403 26.552 9.0488 25.0673 6.86261C23.5826 4.67641 21.4781 2.99848 19.0321 2.05072C16.5861 1.10296 13.9139 0.930013 11.3689 1.55476C8.82384 2.17951 6.52585 3.57251 4.77883 5.54955C3.03181 7.52659 1.91806 9.99453 1.58487 12.627C1.25168 15.2594 1.71475 17.9324 2.91284 20.2923C4.11093 22.6523 5.98759 24.588 8.29465 25.8436C10.6017 27.0992 13.2305 27.6155 15.8333 27.3241M10.1022 11.3813H10.1166M18.7247 11.3813H18.739"
+															stroke="#777676" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+														<path
+															d="M10.8208 18.6638C11.3469 19.1762 11.9742 19.5697 12.6614 19.8182C13.3486 20.0668 14.08 20.1648 14.8072 20.1057M24.4644 28.131L28.083 24.3733C28.532 23.9019 28.7835 23.2725 28.7846 22.6172C28.7856 21.9619 28.5362 21.3317 28.0887 20.8588C27.871 20.6282 27.6096 20.4446 27.3202 20.319C27.0308 20.1934 26.7194 20.1282 26.4045 20.1276C26.0897 20.1269 25.778 20.1906 25.4881 20.315C25.1981 20.4394 24.936 20.6219 24.7173 20.8515L24.4759 21.102L24.2345 20.8515C24.0167 20.621 23.7552 20.4376 23.4658 20.3121C23.1763 20.1865 22.8648 20.1215 22.55 20.121C22.2352 20.1205 21.9235 20.1844 21.6336 20.3089C21.3437 20.4334 21.0816 20.616 20.8631 20.8456C20.4144 21.317 20.1632 21.9461 20.1622 22.601C20.1611 23.2559 20.4102 23.8859 20.8573 24.3587L24.4644 28.131Z"
+															stroke="#777676" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="owl-theme d-desktop">
+								<div class="owl-controls">
+									<div class="custom-nav owl-nav"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top_6">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p class="t_head">PHẢN HỒI TỪ CHUYÊN GIA</p>
+						<div class="slider_expert carousel">
+							<div class="owl-carousel owl-theme">
+								<div class="item">
+									<a href="" target="_self" title="">
+										<picture>
+											<source media="(max-width: 767px)" srcset="images/pageone_14m.jpg" alt="img"
+												title="img" rel="noffolow">
+											<img src="images/pageone_14.jpg" alt="img" title="img"
+												class="img-responsive img_banner">
+										</picture>
+									</a>
+								</div>
+								<div class="item">
+									<a href="" target="_self" title="">
+										<picture>
+											<source media="(max-width: 767px)" srcset="images/pageone_14m.jpg" alt="img"
+												title="img" rel="noffolow">
+											<img src="images/pageone_14.jpg" alt="img" title="img"
+												class="img-responsive img_banner">
+										</picture>
+									</a>
+								</div>
+							</div>
+							<div class="owl-theme">
+								<div class="owl-controls">
+									<div class="custom-nav owl-nav"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top_6">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p class="t_head">CÔNG NGHỆ CHĂM DA</p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<div class="block_news d-flex">
+							<a href="">
+								<img src="images/pageone_15.jpg" alt="img" title="img" class="img-responsive img_1">
+							</a>
+							<a href="">
+								<div>
+									<p class="t_1">05 Hoạt Chất Giúp Da Bạn “Bật Tone” Nhanh Chóng</p>
+									<p class="t_2">khi nói đến vấn đề sắc tố da, bạn nghĩ đến hoạt chất nào...</p>
+									<div class="bl_1 d-flex">
+										<p class="t_3">July 18, 2024</p>
+										<div class="bl_2 d-flex">
+											<img src="images/pageone_16.svg" alt="img" title="img"
+												class="img-responsive">
+											<p class="t_4">50</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<div class="block_news d-flex">
+							<a href="">
+								<img src="images/pageone_15.jpg" alt="img" title="img" class="img-responsive img_1">
+							</a>
+							<a href="">
+								<div>
+									<p class="t_1">05 Hoạt Chất Giúp Da Bạn “Bật Tone” Nhanh Chóng</p>
+									<p class="t_2">khi nói đến vấn đề sắc tố da, bạn nghĩ đến hoạt chất nào...</p>
+									<div class="bl_1 d-flex">
+										<p class="t_3">July 18, 2024</p>
+										<div class="bl_2 d-flex">
+											<img src="images/pageone_16.svg" alt="img" title="img"
+												class="img-responsive">
+											<p class="t_4">50</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<div class="block_news d-flex">
+							<a href="">
+								<img src="images/pageone_15.jpg" alt="img" title="img" class="img-responsive img_1">
+							</a>
+							<a href="">
+								<div>
+									<p class="t_1">05 Hoạt Chất Giúp Da Bạn “Bật Tone” Nhanh Chóng</p>
+									<p class="t_2">khi nói đến vấn đề sắc tố da, bạn nghĩ đến hoạt chất nào...</p>
+									<div class="bl_1 d-flex">
+										<p class="t_3">July 18, 2024</p>
+										<div class="bl_2 d-flex">
+											<img src="images/pageone_16.svg" alt="img" title="img"
+												class="img-responsive">
+											<p class="t_4">50</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<div class="block_news d-flex">
+							<a href="">
+								<img src="images/pageone_15.jpg" alt="img" title="img" class="img-responsive img_1">
+							</a>
+							<a href="">
+								<div>
+									<p class="t_1">05 Hoạt Chất Giúp Da Bạn “Bật Tone” Nhanh Chóng</p>
+									<p class="t_2">khi nói đến vấn đề sắc tố da, bạn nghĩ đến hoạt chất nào...</p>
+									<div class="bl_1 d-flex">
+										<p class="t_3">July 18, 2024</p>
+										<div class="bl_2 d-flex">
+											<img src="images/pageone_16.svg" alt="img" title="img"
+												class="img-responsive">
+											<p class="t_4">50</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="top_1">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+						<img src="images/pageone_1.svg" alt="img" title="img" class="img-responsive img_1">
+						<p class="t_2">Page One Việt Nam</p>
+						<p>Theo dõi qua:</p>
+						<div class="d-flex">
+							<a href=""><img src="images/pageone_17.svg" alt="img" title="img"
+									class="img-responsive"></a>
+							<a href=""><img src="images/pageone_18.svg" alt="img" title="img"
+									class="img-responsive"></a>
+							<a href=""><img src="images/pageone_19.svg" alt="img" title="img"
+									class="img-responsive"></a>
+							<a href=""><img src="images/pageone_20.svg" alt="img" title="img"
+									class="img-responsive"></a>
+							<a href=""><img src="images/pageone_21.svg" alt="img" title="img"
+									class="img-responsive"></a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+						<p class="t_1">Liên Hệ:</p>
+						<a href="tel:0906872948">
+							<button type="button" class="btn_1 btn d-flex">
+								<img src="images/pageone_23.svg" alt="img" title="img">
+								<div>Hotline: <b>090 687 29 48</b></div>
+							</button>
+						</a>
+						<div class="bl_1 d-flex">
+							<img src="images/pageone_24.svg" alt="img" title="img">
+							<p>Địa chỉ: 15 Đường 17, Phường Phước
+								Bình , Ho Chi Minh City, Vietnam</p>
+						</div>
+						<iframe class="lazy"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.105800058006!2d106.71802761000998!3d10.803208258655966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752908933ca403%3A0xe212ca64591c8b8d!2sRejuvaskin%20Vi%E1%BB%87t%20Nam!5e0!3m2!1svi!2sus!4v1699324445072!5m2!1svi!2sus"
+							width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+						<p class="t_1">Hỗ trợ:</p>
+						<p><b>Giờ làm việc:</b> 8:00 - 18:00</p>
+						<p>Thứ 2 - chủ nhật (trừ ngày lễ)</p>
+						<p><b>Tiếp điện thoại ngoài giờ:
+							</b> </p>
+						<p>đến 23:00 hàng ngày</p>
+						<p><b>Ý kiến - phản hồi chất lượng:
+							</b></p>
+						<p>Hotline: <a href="tel:0906872948">090 687 29 48</a></p>
+						<p>Email: <a href="mailto:contact@pageone.vn">Contact@pageone.vn</a></p>
+					</div>
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+						<p class="t_1">Chính sách:</p>
+						<a href="">
+							<p>Giới thiệu</p>
+						</a>
+						<a href="">
+							<p>Chính sách bảo mật</p>
+						</a>
+						<a href="">
+							<p>Hình thức thanh toán</p>
+						</a>
+						<a href="">
+							<p>Chính sách giao hàng</p>
+						</a>
+						<a href="">
+							<p>Chính sách đổi trả</p>
+						</a>
+						<a href="">
+							<p>Cam kết chất lượng dịch vụ</p>
+						</a>
+						<a href="">
+							<p>Câu hỏi thường gặp</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top_2">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="d-flex">
+							<img src="images/pageone_25.svg" alt="img" title="img" class="img-responsive">
+							<div>
+								<p>Bản quyền của PageOne Viet Nam - www.pageonevietnam.com</p>
+								<p>Giấy chứng nhận ĐKKD số 999999999 do Sở Kế hoạch và Đầu tư TPHCM cấp ngày</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mobi_btn d-mobile" id="phone_call_home">
+		<div class="bl_1">
+			<div class="tab">
+				<a href="" target="_blank">
+					<img src="images/pageone_34.svg" alt="img" title="img" class="img-responsive">
+				</a>
+			</div>
+			<div class="tab tab_left">
+				<a href="">
+					<img src="images/pageone_35.svg" alt="img" title="img" class="img-responsive">
+				</a>
+			</div>
+			<div class="tab tab_fab">
+				<div class="top">
+					<div class="fab">
+						<a href="">
+							<img src="images/pageone_36.svg" alt="img" title="img" class="img-responsive">
+							<div class="num">2</div>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="tab tab_right">
+				<a href="javascript:void(0);" target="_blank" data-toggle="modal" data-target="#accountModal"
+					onclick="close_menu()">
+					<img src="images/pageone_37.svg" alt="img" title="img" class="img-responsive">
+				</a>
+			</div>
+			<div class="tab icon_menu">
+				<a href="javascript:void(0);" onclick="open_menu('navbar-ex1-collapse')">
+					<img src="images/pageone_38.svg" alt="img" title="img" class="img-responsive icon_menu">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="desk_noti" id="popup-box">
+		<img src="images/index_9.svg" alt="img" title="img" class="img-responsive">
+		<p class="t_1">Gửi thành công !</p>
+		<p>Chúng tôi sẽ sớm liên hệ lại với bạn.</p>
+	</div>
+	<div id="accountModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<div class="modal-body">
+					<ul class="nav nav-pills d-mobile">
+						<li class="active"><a data-toggle="pill" href="#logIn">Đăng nhập</a></li>
+						<li><a data-toggle="pill" href="#signUp">Đăng ký</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="bl_1 tab-pane fade in active" id="logIn">
+							<p class="t_1">Đăng nhập</p>
+							<label for="userName">
+								<p class="t_2">Email/Số điện thoại:</p>
+							</label>
+							<input type="text" name="userName" class="userName form-control" required>
+							<label for="passWord" class="password d-flex">
+								<p class="t_2">Mật khẩu:</p> <a href="#" class="t_3">Quên mật khẩu</a>
+							</label>
+							<div class="d_2">
+								<input type="password" name="passWord" class="passWord form-control" required>
+								<img src="images/pageone_42.svg" alt="img" title="img" class="visible">
+							</div>
+							<a href="javascript:void(0)">
+								<div class="btn_1">
+									<p>Đăng nhập</p>
+									<img src="images/pageone_41.svg" alt="img" title="img">
+								</div>
+							</a>
+							<p class="t_4">Đăng nhập bằng</p>
+							<div class="d_1 d-flex">
+								<a href="#">
+									<div class="btn_1 btn_2">
+										<img src="images/pageone_39.svg" alt="img" title="img">
+										<p>Facebook</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="btn_1 btn_3">
+										<img src="images/pageone_40.svg" alt="img" title="img">
+										<p>Google</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="bl_1 tab-pane fade" id="signUp">
+							<p class="t_1">Đăng Ký</p>
+							<label for="userName">
+								<p class="t_2">Email/Số điện thoại:</p>
+							</label>
+							<input type="text" name="userName" class="userName form-control" required>
+							<label for="passWord">
+								<p class="t_2">Mật khẩu:</p>
+							</label>
+							<div class="d_2">
+								<input type="password" name="passWord" class="passWord form-control" required>
+								<img src="images/pageone_42.svg" alt="img" title="img" class="visible">
+							</div>
+							<label for="dateBirth">
+								<p class="t_2">Ngày sinh:</p>
+							</label>
+							<div class="d_3 d-flex">
+								<select class="form-control" name="date_birth">
+									<option value="">20</option>
+								</select>
+								<select class="form-control" name="month_birth">
+									<option value="">08</option>
+								</select>
+								<select class="form-control" name="year_birth">
+									<option value="">1999</option>
+								</select>
+							</div>
+							<p class="t_5">Bằng việc đăng ký, bạn đã đọc, hiểu và đồng ý
+								với Page One về <a href="">Điều khoản sử dụng & Chính sách bảo mật</a></p>
+							<a href="javascript:void(0)">
+								<div class="btn_1 btn_4">
+									<p>Đăng Ký</p>
+									<img src="images/pageone_41.svg" alt="img" title="img">
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="giftModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<div class="modal-body">
+					<div class="special_menu">
+						<div class="bl_1">
+							<p class="t_0">Quà tặng dành cho bạn:</p>
+						</div>
+						<div class="bl_1 bl_gift d-flex">
+							<div class="bl_2 polygon d-flex">
+								<p class="t_1 polygon">20<sup>%</sup></p>
+								<div>
+									<p class="t_2">Giảm ngay <b>20%</b></p>
+									<p class="t_3">Cho đơn hàng đầu tiên từ 499K</p>
+									<div class="bl_3 d-flex">
+										<div>
+											<p class="t_4">Mã: <b>99998888</b></p>
+											<p class="t_4">HSD: 10.08.2024</p>
+										</div>
+										<a href="#">
+											<div class="btn_1">Chép mã</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="bl_2 polygon d-flex">
+								<p class="t_1 polygon">20<sup>%</sup></p>
+								<div>
+									<p class="t_2">Giảm ngay <b>20%</b></p>
+									<p class="t_3">Cho đơn hàng đầu tiên từ 499K</p>
+									<div class="bl_3 d-flex">
+										<div>
+											<p class="t_4">Mã: <b>99998888</b></p>
+											<p class="t_4">HSD: 10.08.2024</p>
+										</div>
+										<a href="#">
+											<div class="btn_1">Chép mã</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
