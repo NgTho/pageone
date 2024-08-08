@@ -177,6 +177,36 @@ body {
 		gap        : 15px;
 	}
 
+	.d-flex-start {
+		display    : flex;
+		align-items: flex-start;
+		gap        : 15px;
+	}
+
+	.d-flex-between {
+		display        : flex;
+		justify-content: space-between;
+		gap            : 15px;
+	}
+
+	.d-flex-baseline {
+		display    : flex;
+		align-items: baseline;
+		gap        : 15px;
+	}
+
+	.d-flex-column {
+		@media only screen and (max-width: 767px) {
+			flex-direction: column;
+		}
+	}
+
+
+
+	.w-100 {
+		width: 100%;
+	}
+
 	.polygon {
 		color           : #fff;
 		background-color: var(--color-pink);
@@ -242,8 +272,6 @@ body {
 	}
 
 	header {
-		//position     : sticky;
-		//top          : 0px;
 		z-index      : 999;
 		border-bottom: 1px solid #F9D1D5;
 		margin-bottom: 20px;
@@ -324,6 +352,10 @@ body {
 
 			p {
 				margin: 0px;
+			}
+
+			a {
+				display: block;
 			}
 
 			.num {
@@ -608,22 +640,32 @@ body {
 			}
 		}
 
-		.bl_gift {
+		.bl_vc {
 			.bl_2 {
-				padding: 10px;
+				padding      : 10px;
+				border       : none;
+				border-radius: 0px;
 
 				@media only screen and (max-width: 767px) {
 					background-color: #fff;
-					border          : none;
-					padding         : 0px;
-					background      : unset;
-					border-bottom   : 1px solid #D9D9D9;
-					padding-bottom  : 20px;
-					border-radius   : 0px;
+
+					padding       : 0px;
+					background    : unset;
+					border-bottom : 1px solid #D9D9D9;
+					padding-bottom: 20px;
+
 
 					&:last-of-type {
 						border-bottom : unset;
 						padding-bottom: 0px;
+					}
+				}
+
+				.t_1 {
+					border-radius: 0px;
+
+					@media only screen and (max-width: 767px) {
+						border-radius: 20px 0px;
 					}
 				}
 
@@ -918,6 +960,50 @@ body {
 				margin-top: 40px;
 			}
 		}
+
+		.block_news {
+
+			@media only screen and (max-width: 767px) {
+				padding       : 8px;
+				border        : 1px solid #DADADA;
+				border-radius : 5px;
+				box-shadow    : none;
+				flex-direction: row;
+
+				&>*:first-child {
+					width: unset;
+				}
+			}
+
+			.img_1 {
+
+				@media only screen and (max-width: 767px) {
+					border-radius: 5px;
+				}
+			}
+
+
+			.t_1 {
+				@media only screen and (max-width: 767px) {
+					font-size    : 13px;
+					margin-bottom: 5px;
+				}
+			}
+
+			.t_2 {
+				@media only screen and (max-width: 767px) {
+					font-size    : 12px;
+					margin-bottom: 0px;
+				}
+			}
+
+			.bl_1 {
+				@media only screen and (max-width: 767px) {
+					display: none;
+				}
+			}
+
+		}
 	}
 
 	.product_list {
@@ -1055,7 +1141,7 @@ body {
 		}
 	}
 
-	.bl_gift {
+	.bl_vc {
 		gap            : 20px;
 		justify-content: center;
 
@@ -1087,7 +1173,7 @@ body {
 
 				sup {
 					font-size: 16px;
-					top      : -23px;
+					top      : -5px;
 				}
 			}
 
@@ -2365,6 +2451,110 @@ a.animated-button5.victoria-one5:after {
 	visibility: visible;
 }
 
+.breadcrumb {
+	background-color: unset;
+	padding         : 8px 0px;
+
+	&>li+li:before {
+		content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNyIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDcgMTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xLjUgMTBDMS4yODkwNiAxMCAxLjEwMTU2IDkuOTI5NjkgMC45NjA5MzggOS43ODkwNkMwLjY1NjI1IDkuNTA3ODEgMC42NTYyNSA5LjAxNTYyIDAuOTYwOTM4IDguNzM0MzhMNC4xNzE4OCA1LjVMMC45NjA5MzggMi4yODkwNkMwLjY1NjI1IDIuMDA3ODEgMC42NTYyNSAxLjUxNTYyIDAuOTYwOTM4IDEuMjM0MzhDMS4yNDIxOSAwLjkyOTY4OCAxLjczNDM4IDAuOTI5Njg4IDIuMDE1NjIgMS4yMzQzOEw1Ljc2NTYyIDQuOTg0MzhDNi4wNzAzMSA1LjI2NTYyIDYuMDcwMzEgNS43NTc4MSA1Ljc2NTYyIDYuMDM5MDZMMi4wMTU2MiA5Ljc4OTA2QzEuODc1IDkuOTI5NjkgMS42ODc1IDEwIDEuNSAxMFoiIGZpbGw9IiMzRTMyMzIiIGZpbGwtb3BhY2l0eT0iMC41Ii8+Cjwvc3ZnPgo=");
+	}
+}
+
+.bl_gift {
+	border-radius: 5px;
+	padding      : 15px 20px;
+
+	.text_1 {
+		padding         : 3px 20px;
+		background-color: var(--color-pink);
+		border-radius   : 3px;
+		display         : inline-block;
+		margin-bottom   : 10px;
+		color           : #fff;
+	}
+
+	.block_1 {
+		display    : flex;
+		align-items: center;
+		gap        : 15px;
+
+		img {
+			width        : 48px;
+			height       : 48px;
+			border       : 1px solid #FAC8CD;
+			border-radius: 5px;
+		}
+
+		.text_2 {
+			margin-bottom     : 5px;
+			word-break        : break-word;
+			overflow          : hidden;
+			text-overflow     : ellipsis;
+			display           : -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+		}
+
+		.text_3 {
+			color: var(--color-pink);
+		}
+	}
+}
+
+.input-group {
+	width        : 110px;
+	border-radius: 10px;
+	border       : 1px solid #D0CFCF;
+
+	.input-group-btn {
+		&:nth-of-type(1) {
+			.btn-number {
+				border-radius   : 10px 0px 0px 10px;
+				height          : 33px;
+				border          : 0px;
+				background-color: #fff;
+			}
+		}
+
+		&:nth-of-type(2) {
+			.btn-number {
+				border-radius   : 0px 10px 10px 0px;
+				height          : 33px;
+				border          : 0px;
+				background-color: #fff;
+			}
+		}
+	}
+
+	.btn-number {
+
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: #fff;
+			border-color    : #ccc;
+			color           : unset;
+			outline         : none;
+		}
+	}
+
+	.input-number {
+		text-align      : center;
+		height          : 33px;
+		border          : 0px !important;
+		box-shadow      : none;
+		background-color: #fff;
+		font-weight     : bold;
+
+		&:hover,
+		&:focus,
+		&:active {
+			box-shadow  : none;
+			border-color: #ccc;
+		}
+	}
+}
+
 //////////	 product item	////////////
 .block_product {
 	border-radius: 10px;
@@ -2716,19 +2906,18 @@ a.animated-button5.victoria-one5:after {
 	padding      : 10px 25px 10px 10px;
 
 	@media only screen and (max-width: 767px) {
-		padding      : 8px;
-		border       : 1px solid #DADADA;
-		border-radius: 5px;
-		box-shadow   : none;
+		flex-direction: column;
+		gap           : 20px;
+		padding       : 10px 10px 30px;
+
+		&>*:first-child {
+			width: 100%;
+		}
 	}
 
 	.img_1 {
 		border-radius: 10px;
 		width        : 100%;
-
-		@media only screen and (max-width: 767px) {
-			border-radius: 5px;
-		}
 	}
 
 
@@ -2743,7 +2932,6 @@ a.animated-button5.victoria-one5:after {
 		font-family       : var(--font-bold);
 
 		@media only screen and (max-width: 767px) {
-			font-size    : 13px;
 			margin-bottom: 5px;
 		}
 	}
@@ -2756,10 +2944,8 @@ a.animated-button5.victoria-one5:after {
 		-webkit-line-clamp: 2;
 		-webkit-box-orient: vertical;
 
-
 		@media only screen and (max-width: 767px) {
-			font-size    : 12px;
-			margin-bottom: 0px;
+			margin-bottom: 15px;
 		}
 	}
 
@@ -2768,10 +2954,6 @@ a.animated-button5.victoria-one5:after {
 		border-radius   : 10px;
 		padding         : 10px 15px;
 		justify-content : space-between;
-
-		@media only screen and (max-width: 767px) {
-			display: none;
-		}
 
 		p {
 			margin-bottom: 0px;

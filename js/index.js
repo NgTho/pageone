@@ -84,18 +84,37 @@ $(document).ready(function () {
     }
   });
   const showPopup = () => {
-    clearTimeout($('.cart').data('timeoutId'));
+    clearTimeout($('.shopping_cart').data('timeoutId'));
     $('.popup_cart').stop(true, true).fadeIn();
   }
 
   const hidePopup = () => {
     let timeoutId = setTimeout(function () {
       $('.popup_cart').fadeOut();
-    }, 300);
-    $('.cart').data('timeoutId', timeoutId);
+    }, 500);
+    $('.shopping_cart').data('timeoutId', timeoutId);
   }
 
-  $('.cart, .popup_cart').hover(showPopup, hidePopup);
+  $('.shopping_cart, .popup_cart').hover(showPopup, hidePopup);
+  $('.nav-pills li').click(function () {
+    $(this).find('input[type=radio]').prop('checked', true);
+  });
+
+  //// cart ///////////
+  $('.page_pay').hide();
+  $('.go_payment').click(function () {
+    $('html, body').animate({ scrollTop: 0 }, 0, function () {
+      $('.page_cart').fadeOut(function () {
+        $('.page_pay').fadeIn();
+      });
+    });
+  });
+
+  $('.back_page_cart').click(function () {
+    $('.page_pay').fadeOut(function () {
+      $('.page_cart').fadeIn();
+    });
+  });
 
 
   $('.slider_about .owl-carousel').owlCarousel({
