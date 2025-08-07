@@ -1,0 +1,369 @@
+:root {
+    --font-about-bold: 'SVN-Gilroy-Bold' !important;
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy-Bold';
+    src: url(fonts/SVN-Gilroy-Bold.otf);
+}
+
+@font-face {
+    font-family: 'SVN-Gotham-Regular';
+    src: url(fonts/SVN-Gotham-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Yustine-Signature';
+    src: url(fonts/Fz-Yustine-Signature.ttf);
+}
+
+header {
+    margin-bottom: 0px !important;
+}
+
+.footer {
+    margin-top: 0px !important;
+}
+
+.about {
+    @media only screen and (max-width: 767px) {
+        margin-top: 70px !important;
+    }
+
+    .t_h1 {
+        font-size: 38px;
+        color: var(--color-pink);
+        font-family: var(--font-about-bold);
+        position: relative;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        text-transform: uppercase;
+        text-align: left !important;
+
+        @media only screen and (max-width: 767px) {
+            font-size: 24px;
+            margin-left: 20px;
+        }
+
+        &::before {
+            content: "";
+            width: 15px;
+            height: ~"calc(100% - 15px)";
+            background-color: var(--color-pink);
+            position: absolute;
+            left: -30px;
+            top: 10px;
+
+            @media only screen and (max-width: 767px) {
+                left: -20px;
+                width: 10px;
+            }
+
+        }
+    }
+
+    .t_h2 {
+        background-color: var(--color-pink);
+        color: #fff;
+        font-size: 26px;
+        font-family: var(--font-about-bold);
+        margin-bottom: 60px;
+        text-transform: uppercase;
+        padding: 15px 0px;
+
+        @media only screen and (max-width: 767px) {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .d_1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+
+            @media only screen and (max-width: 767px) {
+                gap: 10px;
+            }
+
+            .t_1 {
+                font-size: 68px;
+                position: relative;
+                top: -5px;
+                line-height: 0px;
+
+                @media only screen and (max-width: 767px) {
+                    font-size: 58px;
+                }
+            }
+        }
+    }
+
+    .t_b {
+        font-family: var(--font-about-bold);
+        color: var(--color-pink);
+    }
+
+
+
+    .top_2 {
+        .d_1 {
+            margin-top: 60px;
+
+            @media only screen and (max-width: 767px) {
+                margin-top: 30px;
+            }
+
+            p {
+                margin-bottom: 30px;
+                text-align: justify;
+            }
+
+            .img_1 {
+                margin-bottom: 30px;
+            }
+        }
+
+        .d_2 {
+            .p_1 {
+                font-size: 24px;
+                text-align: center;
+                padding: 10px 40px;
+                position: relative;
+                margin: 30px 0px;
+
+                @media only screen and (max-width: 767px) {
+                    margin: 40px 0px 20px;
+                    font-size: 18px;
+                }
+
+                &::before,
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 40px;
+                    height: 40px;
+                    background-image: url(../images/about_28.jpg);
+                    background-repeat: no-repeat;
+                }
+
+                &::after {
+                    top: unset;
+                    left: unset;
+                    right: 0px;
+                    bottom: 0px;
+                    background-image: url(../images/about_29.jpg);
+                }
+
+                p {
+                    margin: 0px;
+                }
+            }
+
+            .p_2 {
+                padding: 20px 30px;
+                border-radius: 20px;
+                background-color: var(--color-pink);
+                color: #fff;
+            }
+
+            .img_2 {
+                margin: 60px auto;
+            }
+        }
+
+
+    }
+
+    .top_3 {
+        .d_2 {
+            height: 300px;
+
+            @media only screen and (max-width: 767px) {
+                height: unset;
+                margin-bottom: 30px;
+            }
+
+            img {
+                margin: 0px auto 20px;
+                height: 150px;
+                object-fit: cover;
+
+                @media only screen and (max-width: 767px) {
+                    height: 100px;
+                }
+            }
+
+            p {
+                margin: 0px;
+                text-align: center;
+            }
+        }
+    }
+
+    .top_4 {
+        text-align: center;
+
+        .t_0 {
+            font-family: var(--font-about-bold);
+            font-size: 38px;
+            color: var(--color-pink);
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 1px solid var(--color-pink);
+            display: inline-block;
+            margin: 0px auto 70px;
+
+            @media only screen and (max-width: 767px) {
+                margin: 30px 0px 60px;
+                font-size: 28px;
+            }
+        }
+
+        .d_1 {
+            display: flex;
+            gap: 30px;
+            align-items: normal;
+            justify-content: center;
+            position: relative;
+
+            @media only screen and (max-width: 767px) {
+                flex-direction: column;
+                gap: 60px;
+                padding: 0px 15px;
+            }
+
+            .img_1 {
+                position: absolute;
+                top: 15%;
+                left: 0px;
+            }
+
+            .d_2 {
+                padding: 40px 20px 20px;
+                border-radius: 20px;
+                border: 1px solid var(--color-pink);
+                position: relative;
+                width: 400px;
+                background-color: #fff;
+                z-index: 1;
+
+                @media only screen and (max-width: 767px) {
+                    width: 100%;
+                }
+
+                .t_1 {
+                    font-family: var(--font-about-bold);
+                    font-size: 32px;
+                    position: absolute;
+                    padding: 0px 20px;
+                    color: #000;
+                    background-color: #fff;
+                    top: -26px;
+                    left: 15%;
+                    margin: 0px;
+
+                    @media only screen and (max-width: 767px) {
+                        left: 10vw;
+                        font-size: 28px;
+                    }
+                }
+
+                .p_1 {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    justify-content: left;
+                    margin-bottom: 30px;
+                    font-family: 'SVN-Gotham-Regular';
+
+                    img {
+                        width: 130px;
+                        height: 130px;
+
+                        @media only screen and (max-width: 767px) {
+                            width: 100px;
+                            height: 100px;
+                        }
+                    }
+
+                    p {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    .top_5 {
+        background-image: url(../images/about_19.jpg);
+        background-size: cover;
+        padding: 60px 0px;
+
+        @media only screen and (max-width: 767px) {
+            padding: 30px 0px;
+        }
+    }
+
+    .top_6 {
+
+        .d_2 {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-style: italic;
+            float: right;
+            margin-bottom: 60px;
+
+            @media only screen and (max-width: 767px) {
+                margin-bottom: 30px;
+            }
+
+            img {
+                width: 150px;
+
+                @media only screen and (max-width: 767px) {
+                    width: 100px;
+                }
+            }
+        }
+    }
+
+    .top_7 {
+        position: relative;
+        margin-top: 30px;
+
+        .img_1 {
+            position: absolute;
+            top: 20%;
+            left: 0px;
+            height: 300px;
+            width: 100%;
+        }
+    }
+
+    .top_8 {
+        margin-top: 30px;
+
+        .t_1 {
+            text-align: center;
+            font-size: 48px;
+            font-family: 'Yustine-Signature';
+
+            @media only screen and (max-width: 767px) {
+                font-size: 32px;
+                display: block;
+            }
+
+            .t_b {
+                font-size: 32px;
+
+                @media only screen and (max-width: 767px) {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}

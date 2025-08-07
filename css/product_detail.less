@@ -20,29 +20,28 @@
             &::before {
                 content         : "";
                 width           : 1px;
-                height          : ~"calc(100% - 25px)";
+                height          : calc(100% - 35px);
                 background-color: var(--color-pink);
                 display         : block;
                 position        : absolute;
                 left            : 4px;
-                top             : 8px;
+                top             : 17px;
 
                 @media only screen and (max-width: 767px) {
-                    height: ~"calc(100% - 35px)";
-                    top   : 2vw;
+                    height: ~"calc(100% - 50px)";
+                    top   : 4vw;
                 }
 
                 @media only screen and (max-width: 380px) {
-                    height: calc(100% - 40px);
-                    top   : 4vw;
+                    height: calc(100% - 55px);
+                    top   : 6vw;
                 }
             }
 
-            .text {
-                display      : flex;
-                align-items  : center;
-                margin-bottom: 10px;
-                font-style   : italic;
+            p {
+                font-style  : italic;
+                position    : relative;
+                padding-left: 15px;
 
                 @media only screen and (max-width: 767px) {
                     font-size: 12px;
@@ -58,11 +57,9 @@
                     display         : flex;
                     align-items     : center;
                     background-color: var(--color-pink);
-                    margin-right    : 15px;
-                }
-
-                p {
-                    margin: 0px;
+                    position        : relative;
+                    top             : 15px;
+                    left            : -15px;
                 }
             }
 
@@ -260,6 +257,11 @@
                 @media only screen and (max-width: 767px) {
                     height: 366px !important;
                 }
+            }
+
+            img {
+                max-width: 100% !important;
+                height   : auto !important;
             }
 
             ul {

@@ -41,9 +41,8 @@
 									<button type="submit"><img src="images/pageone_2.svg" alt="img"
 											title="img"></button>
 								</form>
-
-								<div>
-									<a href="javascript:void(0);" data-toggle="modal" data-target="#accountModal">
+								<div class="account">
+									<a href="javascript:void(0);" onclick="openMemberModal()">
 										<img src="images/pageone_3.svg" alt="img" title="img" class="img">
 										<p>Tài khoản</p>
 									</a>
@@ -293,128 +292,123 @@
 		<div class="top_2">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
 						<picture>
 							<source media="(max-width: 767px)" srcset="images/pageone_9m.jpg" alt="img" title="img"
 								rel="noffolow">
 							<img src="images/pageone_9.jpg" alt="img" title="img" class="img-responsive img_banner">
 						</picture>
 					</div>
-					<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 bl_0">
-						<div class="row">
-							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-								<div class="block_product">
-									<a href="">
-										<div class="bl_1">
-											<img src="images/pageone_26.jpg" alt="img" title="img"
-												class="img-responsive img_1">
-											<img src="images/pageone_26_2.jpg" alt="img" title="img"
-												class="img-responsive img_2">
-										</div>
-									</a>
-									<a href="">
-										<div class="bl_2">
-											<p class="t_1">Matrix Repair Pro + Exosome Serum - Chống lão hóa, xóa...
-											</p>
-											<div class="bl_3">
-												<div class="bl_4 d-flex">
-													<div class="bl_5 d-flex">
-														<p class="t_2">525.000đ</p>
-														<p class="t_3">750.000đ</p>
-													</div>
 
-													<p class="polygon">30%</p>
-												</div>
-												<input type="hidden" class="rating" value="4.5" disabled="disabled"
-													data-filled="fas fa-star" data-empty="far fa-star" />
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+						<div class="block_product">
+							<a href="">
+								<div class="bl_1">
+									<img src="images/pageone_26.jpg" alt="img" title="img"
+										class="img-responsive img_1 img_trans">
+									<img src="images/pageone_26_2.jpg" alt="img" title="img"
+										class="img-responsive img_2">
+								</div>
+							</a>
+							<a href="">
+								<div class="bl_2">
+									<p class="t_1">Matrix Repair Pro + Exosome Serum - Chống lão hóa, xóa...
+									</p>
+									<div class="bl_3">
+										<div class="bl_4 d-flex">
+											<div class="bl_5 d-flex">
+												<p class="t_2">525.000đ</p>
+												<p class="t_3">750.000đ</p>
 											</div>
-											<a href="#">
-												<div class="btn_1 d-flex">
-													<span>Thêm vào giỏ hàng</span>
-												</div>
-											</a>
+
+											<p class="polygon">30%</p>
+										</div>
+										<input type="hidden" class="rating" value="4.5" disabled="disabled"
+											data-filled="fas fa-star" data-empty="far fa-star" />
+									</div>
+									<a href="#">
+										<div class="btn_1 d-flex">
+											<span>Thêm vào giỏ hàng</span>
 										</div>
 									</a>
-									<div class="tag_gift">
-										<img src="images/pageone_7.svg" alt="img" title="img">
-									</div>
 								</div>
+							</a>
+							<div class="tag_gift">
+								<img src="images/pageone_7.svg" alt="img" title="img">
 							</div>
-							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-								<div class="block_product">
-									<a href="">
-										<div class="bl_1">
-											<img src="images/pageone_26.jpg" alt="img" title="img"
-												class="img-responsive img_1">
-											<img src="images/pageone_26_2.jpg" alt="img" title="img"
-												class="img-responsive img_2">
-										</div>
-									</a>
-									<a href="">
-										<div class="bl_2">
-											<p class="t_1">Matrix Repair Pro + Exosome Serum - Chống lão hóa, xóa...
-											</p>
-											<div class="bl_3">
-												<div class="bl_4 d-flex">
-													<div class="bl_5 d-flex">
-														<p class="t_2">525.000đ</p>
-														<p class="t_3">750.000đ</p>
-													</div>
-
-													<p class="polygon">30%</p>
-												</div>
-												<input type="hidden" class="rating" value="4.5" disabled="disabled"
-													data-filled="fas fa-star" data-empty="far fa-star" />
-											</div>
-											<a href="#">
-												<div class="btn_1 d-flex">
-													<span>Thêm vào giỏ hàng</span>
-												</div>
-											</a>
-										</div>
-									</a>
-									<div class="tag_gift">
-										<img src="images/pageone_7.svg" alt="img" title="img">
-									</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+						<div class="block_product">
+							<a href="">
+								<div class="bl_1">
+									<img src="images/pageone_26.jpg" alt="img" title="img" class="img-responsive img_1">
+									<img src="images/pageone_26_2.jpg" alt="img" title="img"
+										class="img-responsive img_2">
 								</div>
+							</a>
+							<a href="">
+								<div class="bl_2">
+									<p class="t_1">Matrix Repair Pro + Exosome Serum - Chống lão hóa, xóa...
+									</p>
+									<div class="bl_3">
+										<div class="bl_4 d-flex">
+											<div class="bl_5 d-flex">
+												<p class="t_2">525.000đ</p>
+												<p class="t_3">750.000đ</p>
+											</div>
+
+											<p class="polygon">30%</p>
+										</div>
+										<input type="hidden" class="rating" value="4.5" disabled="disabled"
+											data-filled="fas fa-star" data-empty="far fa-star" />
+									</div>
+									<a href="#">
+										<div class="btn_1 d-flex">
+											<span>Thêm vào giỏ hàng</span>
+										</div>
+									</a>
+								</div>
+							</a>
+							<div class="tag_gift">
+								<img src="images/pageone_7.svg" alt="img" title="img">
 							</div>
-							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-								<div class="block_product">
-									<a href="">
-										<div class="bl_1">
-											<img src="images/pageone_26.jpg" alt="img" title="img"
-												class="img-responsive img_1">
-											<img src="images/pageone_26_2.jpg" alt="img" title="img"
-												class="img-responsive img_2">
-										</div>
-									</a>
-									<a href="">
-										<div class="bl_2">
-											<p class="t_1">Matrix Repair Pro + Exosome Serum - Chống lão hóa, xóa...
-											</p>
-											<div class="bl_3">
-												<div class="bl_4 d-flex">
-													<div class="bl_5 d-flex">
-														<p class="t_2">525.000đ</p>
-														<p class="t_3">750.000đ</p>
-													</div>
-
-													<p class="polygon">30%</p>
-												</div>
-												<input type="hidden" class="rating" value="4.5" disabled="disabled"
-													data-filled="fas fa-star" data-empty="far fa-star" />
-											</div>
-											<a href="#">
-												<div class="btn_1 d-flex">
-													<span>Thêm vào giỏ hàng</span>
-												</div>
-											</a>
-										</div>
-									</a>
-									<div class="tag_gift">
-										<img src="images/pageone_7.svg" alt="img" title="img">
-									</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+						<div class="block_product">
+							<a href="">
+								<div class="bl_1">
+									<img src="images/pageone_26.jpg" alt="img" title="img" class="img-responsive img_1">
+									<img src="images/pageone_26_2.jpg" alt="img" title="img"
+										class="img-responsive img_2">
 								</div>
+							</a>
+							<a href="">
+								<div class="bl_2">
+									<p class="t_1">Matrix Repair Pro + Exosome Serum - Chống lão hóa, xóa...
+									</p>
+									<div class="bl_3">
+										<div class="bl_4 d-flex">
+											<div class="bl_5 d-flex">
+												<p class="t_2">525.000đ</p>
+												<p class="t_3">750.000đ</p>
+											</div>
+
+											<p class="polygon">30%</p>
+										</div>
+										<input type="hidden" class="rating" value="4.5" disabled="disabled"
+											data-filled="fas fa-star" data-empty="far fa-star" />
+									</div>
+									<a href="#">
+										<div class="btn_1 d-flex">
+											<span>Thêm vào giỏ hàng</span>
+										</div>
+									</a>
+								</div>
+							</a>
+							<div class="tag_gift">
+								<img src="images/pageone_7.svg" alt="img" title="img">
 							</div>
 						</div>
 					</div>
@@ -970,8 +964,7 @@
 
 			</div>
 			<div class="tab tab_right">
-				<a href="javascript:void(0);" target="_blank" data-toggle="modal" data-target="#accountModal"
-					onclick="close_menu()">
+				<a href="javascript:void(0);" onclick="openMemberModal()">
 					<img src="images/pageone_37.svg" alt="img" title="img" class="img-responsive">
 				</a>
 			</div>
@@ -982,85 +975,119 @@
 			</div>
 		</div>
 	</div>
-	<div id="accountModal" class="modal fade" role="dialog">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<div class="modal-body">
-					<ul class="nav nav-pills d-mobile">
-						<li class="active"><a data-toggle="pill" href="#logIn">Đăng nhập</a></li>
-						<li><a data-toggle="pill" href="#signUp">Đăng ký</a></li>
-					</ul>
-					<div class="tab-content">
-						<div class="bl_1 tab-pane fade in active" id="logIn">
-							<p class="t_1">Đăng nhập</p>
-							<label for="userName">
-								<p class="t_2">Email/Số điện thoại:</p>
-							</label>
-							<input type="text" name="userName" class="userName form-control" required>
-							<label for="passWord" class="password d-flex">
-								<p class="t_2">Mật khẩu:</p> <a href="#" class="t_3">Quên mật khẩu</a>
-							</label>
-							<div class="d_2">
-								<input type="password" name="passWord" class="passWord form-control" required>
-								<img src="images/pageone_42.svg" alt="img" title="img" class="visible">
-							</div>
-							<a href="javascript:void(0)">
-								<div class="btn_1">
-									<p>Đăng nhập</p>
-									<img src="images/pageone_41.svg" alt="img" title="img">
-								</div>
-							</a>
-							<p class="t_4">Đăng nhập bằng</p>
-							<div class="d_1 d-flex">
-								<a href="#">
-									<div class="btn_1 btn_2">
-										<img src="images/pageone_39.svg" alt="img" title="img">
-										<p>Facebook</p>
-									</div>
-								</a>
-								<a href="#">
-									<div class="btn_1 btn_3">
-										<img src="images/pageone_40.svg" alt="img" title="img">
-										<p>Google</p>
-									</div>
-								</a>
-							</div>
+	<div id="accountModal" class="popup-box lPopup">
+		<ul class="nav nav-pills d-mobile">
+			<li class="active"><a data-toggle="pill" href="#logIn">Đăng nhập</a></li>
+			<li><a data-toggle="pill" href="#signUp">Đăng ký</a></li>
+		</ul>
+		<div class="tab-content">
+			<div class="bl_1 tab-pane fade in active" id="logIn">
+				<p class="t_1">Đăng nhập</p>
+				<label for="userName">
+					<p class="t_2">Email/Số điện thoại:</p>
+				</label>
+				<input type="text" name="userName" class="userName form-control" required>
+				<label for="passWord" class="password d-flex">
+					<p class="t_2">Mật khẩu:</p> <a href="#" class="t_3">Quên mật khẩu</a>
+				</label>
+				<div class="d_2">
+					<input type="password" name="passWord" class="passWord form-control" required>
+					<img src="images/pageone_42.svg" alt="img" title="img" class="visible">
+				</div>
+				<a href="javascript:void(0)">
+					<div class="btn_1">
+						<p>Đăng nhập</p>
+						<img src="images/pageone_41.svg" alt="img" title="img">
+					</div>
+				</a>
+				<p class="t_4">Đăng nhập bằng</p>
+				<div class="d_1 d-flex">
+					<a href="#">
+						<div class="btn_1 btn_2">
+							<img src="images/pageone_39.svg" alt="img" title="img">
+							<p>Facebook</p>
 						</div>
-						<div class="bl_1 tab-pane fade" id="signUp">
-							<p class="t_1">Đăng Ký</p>
-							<label for="userName">
-								<p class="t_2">Email/Số điện thoại:</p>
-							</label>
-							<input type="text" name="userName" class="userName form-control" required>
-							<label for="passWord">
-								<p class="t_2">Mật khẩu:</p>
-							</label>
-							<div class="d_2">
-								<input type="password" name="passWord" class="passWord form-control" required>
-								<img src="images/pageone_42.svg" alt="img" title="img" class="visible">
+					</a>
+					<a href="#">
+						<div class="btn_1 btn_3">
+							<img src="images/pageone_40.svg" alt="img" title="img">
+							<p>Google</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="bl_1 tab-pane fade" id="signUp">
+				<p class="t_1">Đăng Ký</p>
+				<label for="userName">
+					<p class="t_2">Email/Số điện thoại:</p>
+				</label>
+				<input type="text" name="userName" class="userName form-control" required>
+				<label for="passWord">
+					<p class="t_2">Mật khẩu:</p>
+				</label>
+				<div class="d_2">
+					<input type="password" name="passWord" class="passWord form-control" required>
+					<img src="images/pageone_42.svg" alt="img" title="img" class="visible">
+				</div>
+				<label for="dateBirth">
+					<p class="t_2">Ngày sinh:</p>
+				</label>
+				<div class="d_3 d-flex">
+					<select class="form-control" name="date_birth">
+						<option value="">20</option>
+					</select>
+					<select class="form-control" name="month_birth">
+						<option value="">08</option>
+					</select>
+					<select class="form-control" name="year_birth">
+						<option value="">1999</option>
+					</select>
+				</div>
+				<p class="t_5">Bằng việc đăng ký, bạn đã đọc, hiểu và đồng ý
+					với Page One về <a href="">Điều khoản sử dụng & Chính sách bảo mật</a></p>
+				<a href="javascript:void(0)">
+					<div class="btn_1 btn_4">
+						<p>Đăng Ký</p>
+						<img src="images/pageone_41.svg" alt="img" title="img">
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="giftModal" class="popup-box lPopup">
+		<div class="special_menu">
+			<div class="bl_1">
+				<p class="t_0">Quà tặng dành cho bạn:</p>
+			</div>
+			<div class="bl_1 bl_vc d-flex">
+				<div class="bl_2 polygon d-flex">
+					<p class="t_1 polygon">20<sup>%</sup></p>
+					<div>
+						<p class="t_2">Giảm ngay <b>20%</b></p>
+						<p class="t_3">Cho đơn hàng đầu tiên từ 499K</p>
+						<div class="bl_3 d-flex">
+							<div>
+								<p class="t_4">Mã: <b>99998888</b></p>
+								<p class="t_4">HSD: 10.08.2024</p>
 							</div>
-							<label for="dateBirth">
-								<p class="t_2">Ngày sinh:</p>
-							</label>
-							<div class="d_3 d-flex">
-								<select class="form-control" name="date_birth">
-									<option value="">20</option>
-								</select>
-								<select class="form-control" name="month_birth">
-									<option value="">08</option>
-								</select>
-								<select class="form-control" name="year_birth">
-									<option value="">1999</option>
-								</select>
+							<a href="#">
+								<div class="btn_1">Chép mã</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="bl_2 polygon d-flex">
+					<p class="t_1 polygon">20<sup>%</sup></p>
+					<div>
+						<p class="t_2">Giảm ngay <b>20%</b></p>
+						<p class="t_3">Cho đơn hàng đầu tiên từ 499K</p>
+						<div class="bl_3 d-flex">
+							<div>
+								<p class="t_4">Mã: <b>99998888</b></p>
+								<p class="t_4">HSD: 10.08.2024</p>
 							</div>
-							<p class="t_5">Bằng việc đăng ký, bạn đã đọc, hiểu và đồng ý
-								với Page One về <a href="">Điều khoản sử dụng & Chính sách bảo mật</a></p>
-							<a href="javascript:void(0)">
-								<div class="btn_1 btn_4">
-									<p>Đăng Ký</p>
-									<img src="images/pageone_41.svg" alt="img" title="img">
-								</div>
+							<a href="#">
+								<div class="btn_1">Chép mã</div>
 							</a>
 						</div>
 					</div>
@@ -1068,53 +1095,9 @@
 			</div>
 		</div>
 	</div>
-	<div id="giftModal" class="modal fade" role="dialog">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<div class="modal-body">
-					<div class="special_menu">
-						<div class="bl_1">
-							<p class="t_0">Quà tặng dành cho bạn:</p>
-						</div>
-						<div class="bl_1 bl_vc d-flex">
-							<div class="bl_2 polygon d-flex">
-								<p class="t_1 polygon">20<sup>%</sup></p>
-								<div>
-									<p class="t_2">Giảm ngay <b>20%</b></p>
-									<p class="t_3">Cho đơn hàng đầu tiên từ 499K</p>
-									<div class="bl_3 d-flex">
-										<div>
-											<p class="t_4">Mã: <b>99998888</b></p>
-											<p class="t_4">HSD: 10.08.2024</p>
-										</div>
-										<a href="#">
-											<div class="btn_1">Chép mã</div>
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="bl_2 polygon d-flex">
-								<p class="t_1 polygon">20<sup>%</sup></p>
-								<div>
-									<p class="t_2">Giảm ngay <b>20%</b></p>
-									<p class="t_3">Cho đơn hàng đầu tiên từ 499K</p>
-									<div class="bl_3 d-flex">
-										<div>
-											<p class="t_4">Mã: <b>99998888</b></p>
-											<p class="t_4">HSD: 10.08.2024</p>
-										</div>
-										<a href="#">
-											<div class="btn_1">Chép mã</div>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	<div class="desk_noti" id="popup-noti">
+		<img src="images/pageone_56.svg" alt="img" title="img" class="img-responsive">
+		<p></p>
 	</div>
 
 </body>

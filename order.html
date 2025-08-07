@@ -339,10 +339,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="desk_noti" id="popup-order">
+	<div class="desk_noti" id="popup-noti">
 		<img src="images/pageone_56.svg" alt="img" title="img" class="img-responsive">
-		<p class="t_1">Đặt hàng thành công !</p>
-		<p>Cảm ơn bạn đã sử dụng sản phẩm của Page One !</p>
+		<p></p>
 	</div>
 	<div id="accountModal" class="modal fade" role="dialog">
 		<div class="modal-dialog">
@@ -481,8 +480,5 @@
 
 </body>
 <script>
-	$.fancybox.open({
-		src: '#popup-order',
-		type: 'inline'
-	});
+	openFancyPopup('#popup-noti', '<p class="t_1">Đặt hàng thành công !</p><p>Cảm ơn bạn đã sử dụng sản phẩm của Page One!</p>');
 </script>

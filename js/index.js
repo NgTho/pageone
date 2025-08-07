@@ -1,5 +1,5 @@
+var ROOT_URL = "https://pageone.com.vn/";
 /////////////////////////////// carousel //////////////////////////
-
 $(document).ready(function () {
   let owlCarouselFunction = (element, numDesk = 1, numMobile = 1, loop = false, autoplay = false, nav = true, dots = false, margin = 0, stagePadding = 0, lazyLoad = true) => {
     var carousel = $(`.${element} .owl-carousel`);
@@ -39,6 +39,7 @@ $(document).ready(function () {
   owlCarouselFunction('slider_expert', 1, 1, true, true, true, false);
   owlCarouselFunction('carousel_edu', 9, 5, true, true, false, false, 10);
   owlCarouselFunction('carousel_ho', 6, 3, true, true, true, false, 10);
+  owlCarouselFunction('carousel_action', 5, 3, true, true, true, false, 10);
 
   $('.slider_feedback .owl-carousel').owlCarousel({
     center: false,
@@ -83,22 +84,8 @@ $(document).ready(function () {
       input.attr('type', 'password');
     }
   });
-  const showPopup = () => {
-    clearTimeout($('.shopping_cart').data('timeoutId'));
-    $('.popup_cart').stop(true, true).fadeIn();
-  }
 
-  const hidePopup = () => {
-    let timeoutId = setTimeout(function () {
-      $('.popup_cart').fadeOut();
-    }, 500);
-    $('.shopping_cart').data('timeoutId', timeoutId);
-  }
 
-  $('.shopping_cart, .popup_cart').hover(showPopup, hidePopup);
-  $('.nav-pills li').click(function () {
-    $(this).find('input[type=radio]').prop('checked', true);
-  });
 
   //// cart ///////////
   $('.page_pay').hide();
@@ -147,26 +134,6 @@ $(document).ready(function () {
       }
     }
   });
-  /* $('.carousel_4 .owl-carousel').owlCarousel({
-    loop: false,
-    margin: 10,
-    autoplay: false,
-    autoplayHoverPause: true,
-    nav: false,
-    dots: false,
-    stagePadding: 39,
-    margin: 40,
-    responsive: {
-      0: {
-        items: 1,
-        stagePadding: 19,
-        margin: 20,
-      },
-      767: {
-        items: 5
-      }
-    }
-  }); */
   ////////// owl carousel thumbnail //////////////
   var bigimage = $('.carousel_3 .owl-carousel');
   var thumbs = $('.carousel_4 .owl-carousel');
@@ -181,6 +148,7 @@ $(document).ready(function () {
       autoplay: false,
       dots: false,
       loop: true,
+      lazyLoad: true
 
 
     })
@@ -204,12 +172,20 @@ $(document).ready(function () {
       slideBy: 4,
       touchDrag: false,
       mouseDrag: false,
+      lazyLoad: true
     })
     .on("changed.owl.carousel", syncPosition2);
 
   function syncPosition(el) {
     var count = el.item.count - 1;
-    var current = Math.round(el.item.index - el.item.count / 2 - 0.5);
+    var current = el.item.index;
+
+    // If there are only 2 items, directly handle the index.
+    if (el.item.count === 2) {
+      current = el.item.index % 2;
+    } else {
+      current = Math.round(el.item.index - el.item.count / 2 - 0.5);
+    }
 
     if (current < 0) {
       current = count;
@@ -255,68 +231,6 @@ $(document).ready(function () {
   });
   ////////// end owl carousel thumbnail //////////////
 
-  /////////////////////////////// TAB //////////////////////////
-  (function ($) {
-    $('.tabs').addClass('active').find('> li:eq(0)').addClass('active');
-
-    $('.tab ul.tabs li a').click(function (g) {
-      var tab = $(this).closest('.tab'),
-        index = $(this).closest('li').index();
-
-      tab.find('ul.tabs > li').removeClass('active');
-      $(this).closest('li').addClass('active');
-
-      tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();
-      tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').slideDown();
-
-      g.preventDefault();
-    });
-  })(jQuery);
-
-  $(window).scroll(function () {
-    $('.product-description ul.nav-tabs li').each(function () {
-      var x = $($(this).find('a[data-spy=scroll]').attr('href'));
-      if ($(window).scrollTop() > (x.offset().top - 150) && $(window).scrollTop() < (x.offset().top + x.height() - 125)) {
-        $('.product-description ul.nav-tabs li').removeClass('active');
-        $(this).addClass('active');
-      }
-      else {
-        //$(this).removeClass('active');
-      }
-    })
-  });
-
-  /*$(document).ready(function() {
-      $(".responsive-accordion").each(function() {
-          $(".responsive-accordion-minus", this).hide(), 
-          $(".responsive-accordion-panel", this).hide(), 
-          $(".responsive-accordion-head", this).click(function() {
-              var i = $(this).parent().parent(),
-                  s = $(this),
-                  e = s.find(".responsive-accordion-plus"),
-                  n = s.find(".responsive-accordion-minus"),
-                  o = s.siblings(".responsive-accordion-panel");
-              i.find(".responsive-accordion-head").not(this).removeClass("active"), 
-              i.find(".responsive-accordion-panel").not(this).removeClass("active").slideUp(), 
-              s.hasClass("active") ? 
-              (
-                  s.removeClass("active"), 
-                  e.show(), 
-                  n.hide(), 
-                  o.removeClass("active").slideUp()
-              ) 
-              : 
-              (
-                  s.addClass("active"), 
-                  e.hide(), 
-                  n.show(), 
-                  o.addClass("active").slideDown()
-              )
-          })
-      });
-          $(".sp_chitiet_head").addClass('active');
-          $(".sp_chitiet_panel").show();
-  });*/
 
   $(document).ready(function () {
 
@@ -438,12 +352,6 @@ $(document).ready(function () {
   });
 
 });
-////////////////    Mobile Dropdown Menu Snippet    //////////////////////
-function toggle_menu(x) {
-  x.classList.toggle("change");
-  //$(".navbar-toggle").toggleClass("menu-hidden", 1800, "easeOutQuint");
-};
-
 
 /////////////   Lazy load   /////////////////
 $(function () {
@@ -453,6 +361,61 @@ $(function () {
     threshold: 0
   });
 });
+$(function () {
+  $('.lazy2').lazy({
+    effect: "fadeIn",
+    threshold: 500,
+  });
+});
+////////////////* phu luc *///////////////
+$(".phu_luc .show_hide").click(function () {
+  var lable = $(".show_hide").html();
+  //alert(lable);
+
+  if (lable == '<i class="fa fa-chevron-up" aria-hidden="true"> </i>') {
+    $(".show_hide").html('<i class="fa fa-chevron-down" aria-hidden="true"> </i>');
+    $(".table_content").slideUp(200);
+  } else {
+    $(".show_hide").html('<i class="fa fa-chevron-up" aria-hidden="true"> </i>');
+    $(".table_content").slideDown(400);
+  }
+
+});
+$(document).on('click', '.phu_luc a[href^="#"]', function (event) {
+  //event.preventDefault();
+  $('html, body').animate({
+    scrollTop: $($.attr(this, 'href')).offset().top - 100
+  }, 1000);
+});
+$(document).ready(function () {
+  $('body .pcontent .phu_luc ul li').first().addClass('current');
+  $('body .pcontent .phu_luc ul li').hover(function () {
+    $('body .pcontent .phu_luc ul li').removeClass('current');
+    $(this).addClass('current');
+  }, function () {
+    $(this).removeClass('current');
+  });
+});
+////////////////load more////////////////////
+$(document).ready(function () {
+  loadMore = (btnLoad, tabId, element, num) => {
+    let ele = "#" + tabId + " ." + element;
+    let hidden = ele + ':hidden';
+    let btn = "#" + tabId + " ." + btnLoad;
+    if ($(ele).length <= num) {
+      $(btn).hide();
+    }
+    $(ele).slice(num).hide();
+    $(btn).on("click", function (e) {
+      e.preventDefault();
+      $(hidden).slice(0, num).slideDown(100);
+      if ($(hidden).length == 0) {
+        $(btn).hide();
+      }
+    });
+  }
+  loadMore('loadmore', 'news_list', 'block_news', 10);
+})
 //////////   menu mobile /////////
 function open_search_mobile() {
   close_click_buy();
@@ -477,7 +440,7 @@ function open_menu(element) {
   $("." + element).after('<div class="close_menu_body" onclick="close_menu()"></div>');
   $("." + element).addClass('active');
   $('.icon_menu').html('<a href="javascript:void(0);" onclick="close_menu()"><img src = "images/index_55.svg" alt = "img" title = "img" class= "img-responsive icon_menu" /></a > ');
-  $(".input_search").focus();
+  //$(".input_search").focus();
 }
 
 function close_menu() {
@@ -546,62 +509,6 @@ $(document).ready(function () {
     pause: "false",
   }).trigger('slid.bs.carousel');
 
-
-
-
-
-  /////////   Parallax Background image     ///////////////////
-  var background_image_parallax = function ($object, multiplier) {
-    multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-    multiplier = 1 - multiplier;
-    var $doc = $(document);
-    $object.css({ "background-attatchment": "fixed" });
-    $(window).scroll(function () {
-      var from_top = $doc.scrollTop() - 1400,
-        bg_css = '0px ' + (multiplier * from_top) + 'px';
-      $object.css({ "background-position": bg_css });
-    });
-  };
-  var background_image_parallax2 = function ($object, multiplier) {
-    multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-    multiplier = 1 - multiplier;
-    var $doc = $(document);
-    $object.css({ "background-attatchment": "fixed" });
-    $(window).scroll(function () {
-      var from_top = $doc.scrollTop() - 1700,
-        bg_css = '0px ' + (multiplier * from_top) + 'px';
-      $object.css({ "background-position": bg_css });
-    });
-  };
-  var background_image_parallax3 = function ($object, multiplier) {
-    multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-    multiplier = 1 - multiplier;
-    var $doc = $(document);
-    $object.css({ "background-attatchment": "fixed" });
-    $(window).scroll(function () {
-      var from_top = $doc.scrollTop() - 950,
-        bg_css = '0px ' + (multiplier * from_top) + 'px';
-      $object.css({ "background-position": bg_css });
-    });
-  };
-  var background_image_parallax4 = function ($object, multiplier) {
-    multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-    multiplier = 1 - multiplier;
-    var $doc = $(document);
-    $object.css({ "background-attatchment": "fixed" });
-    $(window).scroll(function () {
-      var from_top = $doc.scrollTop() - 3200,
-        bg_css = '0px ' + (multiplier * from_top) + 'px';
-      $object.css({ "background-position": bg_css });
-    });
-  };
-  background_image_parallax($(".parallax_index"), 0.7);
-  background_image_parallax2($(".parallax_anti_pollution"), 0.7);
-  background_image_parallax($(".parallax_scarheal_product"), 0.7);
-  background_image_parallax3($(".parallax_stretch_mark_cream"), 0.8);
-  background_image_parallax4($(".parallax_physician_support"), 0.7);
-
-
   /////////   Click to top     ///////////////////
   var btn = $('#button');
   $(window).scroll(function () {
@@ -618,73 +525,6 @@ $(document).ready(function () {
   });
 })
 
-
-///////////////////  Accordion Dropdown menu   //////////////////
-$(function () {
-  var Accordion = function (el, multiple) {
-    this.el = el || {};
-    this.multiple = multiple || false;
-
-    // Variables privadas
-    var links = this.el.find('.link');
-    //links.parent().addClass('open');
-    // Evento
-    links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown)
-  }
-
-  Accordion.prototype.dropdown = function (e) {
-    var $el = e.data.el;
-    $this = $(this),
-      $next = $this.next();
-
-
-    if (document.documentElement.clientWidth > 767) {
-      if ($this.parent().hasClass('open') == false) {
-        $next.slideToggle();
-        $this.parent().toggleClass('open');
-      }
-      if (!e.data.multiple) {
-        $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
-      };
-    }
-  }
-
-  var accordion = new Accordion($('#accordion'), false);
-  var accordion = new Accordion($('#accordion2'), false);
-  $(".show_accordion").show();
-  $(".show_accordion").parent().addClass('open');
-  if (document.documentElement.clientWidth < 767) {
-    $(".submenu").parent().addClass('open');
-  }
-});
-
-
-$(function () {
-  var Accordion_faqs = function (el, multiple) {
-    this.el = el || {};
-    this.multiple = multiple || false;
-
-    // Variables privadas
-    var links = this.el.find('.link');
-    //links.parent().addClass('open');
-    // Evento
-    links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown)
-  }
-
-  Accordion_faqs.prototype.dropdown = function (e) {
-    var $el = e.data.el;
-    $this = $(this),
-      $next = $this.next();
-
-    $next.slideToggle();
-    $this.parent().toggleClass('open');
-  }
-  var accordion = new Accordion_faqs($('.accordion_faqs'), false);
-
-
-
-
-});
 /* ///////  rating  ////////// */
 $('.rating').rating();
 $('.rating_detail').rating({
@@ -696,7 +536,7 @@ $('.rating_detail').rating({
     });
   }
 });
-/* $(document).ready(function () {
+$(document).ready(function () {
   $(".rating-symbol").click(function () {
     var point = $('.rating_detail').val();
     var alias = $('#alias').val();
@@ -736,7 +576,7 @@ $('.rating_detail').rating({
   }
   setCookie("rating", 6, 6);
 
-}); */
+});
 $(document).ready(function () {
   $(document).on('click', 'a.btn_click', function (e) {
     console.log(12345);
@@ -754,10 +594,137 @@ $(document).ready(function () {
     afterClose: function () {
     }
   });
-})
+
+  ////////////////Popup Cart///////////////////////
+  const showPopup = () => {
+    clearTimeout($('.shopping_cart').data('timeoutId'));
+    $('.popup_cart').stop(true, true).fadeIn();
+  }
+
+  const hidePopup = () => {
+    let timeoutId = setTimeout(function () {
+      $('.popup_cart').fadeOut();
+    }, 500);
+    $('.shopping_cart').data('timeoutId', timeoutId);
+  }
+
+  $('.shopping_cart, .popup_cart').hover(showPopup, hidePopup);
+  $('.nav-pills li').click(function () {
+    $(this).find('input[type=radio]').prop('checked', true);
+  });
+
+
+  $(document).on("click", ".add_to_cart", function (e) {
+    e.preventDefault();
+    let id = $(this).attr('data-id');
+    let num = $(this).attr('data-num');
+    if (!num) {
+      num = 1;
+    }
+    $.ajax({
+      url: ROOT_URL + "index.php?module=ajaxCart",
+      type: "POST",
+      data: { "action": "addCart", "id": id, "num": num },
+      success: function (data) {
+        openFancyPopup('#popup-noti', 'Thêm vào giỏ hàng thành công !', 2000);
+        loadInfoCart('count');
+        loadInfoCart('loadInfoCart');
+      }
+    });
+  });
+  $(document).on("click", ".del_cart", function (e) {
+    e.preventDefault();
+    let id = $(this).attr('data-id');
+    $.ajax({
+      url: ROOT_URL + "index.php?module=ajaxCart",
+      type: "POST",
+      data: {
+        "action": "delCart",
+        "id": id
+      },
+      success: function (data) {
+        loadInfoCart('count');
+        loadInfoCart('loadInfoCart');
+      }
+    });
+  });
+  $(document).on("click", ".copyVc", function (e) {
+    e.preventDefault();
+    let div = $(this);
+    let id = div.attr('data-id');
+    let btn = div.children().first();
+    $.ajax({
+      url: ROOT_URL + "index.php?module=ajaxCart",
+      type: "POST",
+      data: {
+        "action": "copyVc",
+        "id": id
+      },
+      success: function (data) {
+        btn.text('Đã chép');
+        div.removeAttr('class');
+        div.removeAttr('data-id');
+      }
+    });
+  });
+});
+
+const loadInfoCart = (action, data = null) => {
+  $.ajax({
+    url: ROOT_URL + "index.php?module=ajaxCart",
+    type: "POST",
+    data: { 'action': action, data },
+    success: function (data) {
+      if (action == 'count') {
+        $(".num").text(data);
+      }
+      if (action == 'loadInfoCart') {
+        $(".popup_cart").html(data);
+      }
+    }
+  });
+}
+
+
+//loadInfoCart('count');
+//loadInfoCart('loadInfoCart');
+
+////////////////// Modal ///////////////////
+const openFancyPopup = (div, str = '', time = 0) => {
+  if (str !== '') {
+    $(div).find('p').html(str);
+  }
+  $.fancybox.open({
+    src: div,
+    type: 'inline'
+  });
+  if (time !== 0) {
+    setTimeout(function () {
+      $.fancybox.close();
+    }, time);
+  }
+}
 const openGiftModal = () => {
   if (window.innerWidth < 768) {
-    $('#giftModal').modal('show');
+    //$('#giftModal').modal('show');
+    openFancyPopup('#giftModal');
   }
+  close_menu();
+}
+const loadMemberModal = (action) => {
+  $.ajax({
+    url: ROOT_URL + "member/",
+    type: "POST",
+    data: { 'action': action },
+    success: function (data) {
+      if (action == 'loadInfo') {
+        $('#resultMember').html(data);
+      }
+    }
+  });
+}
+const openMemberModal = () => {
+  //loadMemberModal('loadInfo');
+  openFancyPopup('#accountModal');
   close_menu();
 }

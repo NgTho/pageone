@@ -17,37 +17,36 @@
 .product_detail .advantage .d_1::before {
   content: "";
   width: 1px;
-  height: calc(100% - 25px);
+  height: calc(100% - 35px);
   background-color: var(--color-pink);
   display: block;
   position: absolute;
   left: 4px;
-  top: 8px;
+  top: 17px;
 }
 @media only screen and (max-width: 767px) {
   .product_detail .advantage .d_1::before {
-    height: calc(100% - 35px);
-    top: 2vw;
+    height: calc(100% - 50px);
+    top: 4vw;
   }
 }
 @media only screen and (max-width: 380px) {
   .product_detail .advantage .d_1::before {
-    height: calc(100% - 40px);
-    top: 4vw;
+    height: calc(100% - 55px);
+    top: 6vw;
   }
 }
-.product_detail .advantage .d_1 .text {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+.product_detail .advantage .d_1 p {
   font-style: italic;
+  position: relative;
+  padding-left: 15px;
 }
 @media only screen and (max-width: 767px) {
-  .product_detail .advantage .d_1 .text {
+  .product_detail .advantage .d_1 p {
     font-size: 12px;
   }
 }
-.product_detail .advantage .d_1 .text::before {
+.product_detail .advantage .d_1 p::before {
   content: "";
   width: 8px;
   min-width: 8px;
@@ -57,10 +56,9 @@
   display: flex;
   align-items: center;
   background-color: var(--color-pink);
-  margin-right: 15px;
-}
-.product_detail .advantage .d_1 .text p {
-  margin: 0px;
+  position: relative;
+  top: 15px;
+  left: -15px;
 }
 @media (min-width: 1200px) {
   .product_detail .top_1 .container {
@@ -222,6 +220,10 @@
   .product_detail .top_3 .tab-content iframe {
     height: 366px !important;
   }
+}
+.product_detail .top_3 .tab-content img {
+  max-width: 100% !important;
+  height: auto !important;
 }
 .product_detail .top_3 .tab-content ul li::marker {
   color: #777676;
